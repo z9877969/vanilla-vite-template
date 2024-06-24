@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite';
-import glob from 'glob';
+// import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { globalStylesOptions } from './global.styles';
 
 export default defineConfig(({ command }) => {
@@ -26,7 +27,24 @@ export default defineConfig(({ command }) => {
     //   },
     //   outDir: '../dist',
     // },
-    plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+    plugins: [
+      injectHTML(),
+      FullReload(['./src/**/**.html']),
+      ViteImageOptimizer({
+        png: {
+          // https://sharp.pixelplumbing.com/api-output#png
+          quality: 60,
+        },
+        jpeg: {
+          // https://sharp.pixelplumbing.com/api-output#jpeg
+          quality: 60,
+        },
+        jpg: {
+          // https://sharp.pixelplumbing.com/api-output#jpeg
+          quality: 60,
+        },
+      }),
+    ],
     css: {
       preprocessorOptions: {
         scss: {
