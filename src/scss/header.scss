@@ -20,7 +20,7 @@
 .nav-link {
   font-weight: 500;
   letter-spacing: 0.02em;
-  line-height: 1.5;
+  @include font(30, 40);
   color: $_header_color;
 }
 
