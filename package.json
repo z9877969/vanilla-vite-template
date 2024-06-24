@@ -11,7 +11,10 @@
   "devDependencies": {
     "glob": "^8.1.0",
     "sass": "^1.77.6",
-    "vite": "^4.5.2"
+    "sharp": "^0.33.4",
+    "svgo": "^3.3.2",
+    "vite": "^4.5.2",
+    "vite-plugin-image-optimizer": "^1.1.8"
   },
   "author": "Andrii Kyrylenko <z9877969@gmail.com>",
   "license": "ISC",
