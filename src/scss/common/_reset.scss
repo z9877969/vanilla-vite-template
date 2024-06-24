@@ -1,16 +1,28 @@
 /* Reset styles */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
+p,
+li {
   margin: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
 }
 
 ul {

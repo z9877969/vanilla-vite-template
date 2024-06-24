@@ -5,17 +5,26 @@
 .nav-list {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 40px;
+
+  @include media(tablet) {
+    justify-content: flex-start;
+  }
+
+  @include media(desktop) {
+    justify-content: flex-end;
+  }
 }
 
 .nav-link {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  color: $_header_color;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #747bff;
+  color: $_header_accent_color;
 }

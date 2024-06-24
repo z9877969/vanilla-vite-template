@@ -1,18 +1,19 @@
 {
-  "name": "vanilla-app-template",
+  "name": "vanilla-vite-template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.5.2",
-    "glob": "^8.1.0"
+    "glob": "^8.1.0",
+    "sass": "^1.77.6",
+    "vite": "^4.5.2"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Andrii Kyrylenko <z9877969@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.0.5",
