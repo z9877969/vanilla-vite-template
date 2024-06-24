@@ -7,14 +7,6 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
-
-  @include media(tablet) {
-    justify-content: flex-start;
-  }
-
-  @include media(desktop) {
-    justify-content: flex-end;
-  }
 }
 
 .nav-link {

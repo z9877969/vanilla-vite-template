@@ -1,4 +1,14 @@
-$_main_color: #242424;
-$_main_bg_color: rgba(255, 255, 255, 0.87);
+$_title_color: #062442;
+$_main_text_color: #05101c;
+$_third_text_color: #ddfcd9;
+$_main_bg_color: #d3bca5;
+$_second_bg_color: #f4e4cf;
 $_header_color: #747bff;
 $_header_accent_color: red;
+$_header_bg: rgba(68, 117, 62, 0.4);
+$_header-menu_bg: rgba(49, 103, 43, 0.7);
+$_background_gradient: linear-gradient(
+  39deg,
+  rgba(219, 168, 90, 0.8) 0%,
+  rgba(142, 219, 203, 0.8) 99.5%
+);
