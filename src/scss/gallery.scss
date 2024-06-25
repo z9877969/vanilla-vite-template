@@ -1,0 +1,32 @@
+.gallery {
+  padding: 50px 0px;
+}
+.galleryDiv {
+  justify-content: center;
+}
+
+.galleryTitle {
+  padding-bottom: 24px;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 53.32px;
+  color: $_title_color;
+
+  @media (min-width: 1220px) {
+    font-size: 64px;
+    line-height: 85.31px;
+  }
+}
+
+.swiperGallery {
+  width: auto;
+  height: 311px;
+  overflow: hidden;
+}
+
+.gallerySlide {
+  width: 175px;
+  height: 311px;
+}
