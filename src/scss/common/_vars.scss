@@ -4,7 +4,10 @@ $_third_text_color: #ddfcd9;
 $_main_bg_color: #d3bca5;
 $_second_bg_color: #f4e4cf;
 $_header_bg: rgba(68, 117, 62, 0.4);
-$_header-menu_bg: rgba(49, 103, 43, 0.7);
+$_header_menu: rgba(49, 103, 43, 0.7);
+$_burger_bg: #2b5127;
+$_google_btn: #2b5127;
+$_google_active: #1d361a;
 $_background_gradient: linear-gradient(
   39deg,
   rgba(219, 168, 90, 0.8) 0%,
@@ -16,3 +19,6 @@ $_font-inter: 'Inter';
 $_font-rubik: 'Rubik';
 $_font-playfair: 'Playfair Display';
 $_font-charm: 'Charm';
+
+$_animation_function: cubic-bezier(0.4, 0, 0.2, 1);
+$_animation_duration: 400ms;

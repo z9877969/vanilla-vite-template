@@ -1,14 +1,84 @@
-<header>
-  <div class="container header">
+<header class="header">
+  <div class="container">
     <div class="header-mobile">
       <a href="./index.html">
-        <img src="./img/logo.webp" alt="game logo" width="60" height="47" />
+        <img
+          src="./img/logo.webp"
+          alt="game logo"
+          width="60"
+          height="47"
+          class="logo-desk"
+        />
       </a>
-      <button type="button" class="burger-button">
+
+      <nav class="nav-desktop">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="#reviews">Reviews</a>
+          </li>
+          <li>
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="#about">About This Game</a>
+          </li>
+          <li>
+            <a href="#faq">FAQ</a>
+          </li>
+          <li>
+            <a href="#benefits">Benefits</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button type="button" class="burger-button" data-burger-open>
         <svg width="35" height="40">
           <use class="burger" href="./img/sprite.svg#icon-menu"></use>
         </svg>
       </button>
     </div>
+  </div>
+
+  <!-- Burger menu -->
+  <div class="mobile-menu" data-burger-menu>
+    <div>
+      <a href="./index.html">
+        <img src="./img/logo.webp" alt="game logo" width="60" height="47" />
+      </a>
+
+      <h2>Jewel Queen: Puzzle & Magic</h2>
+
+      <button type="button" class="burger-button" data-burger-close>
+        <svg width="40" height="40">
+          <use class="cross" href="../img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="nav-burger">
+      <ul>
+        <li data-menu-item>
+          <a href="./index.html">Home</a>
+        </li>
+        <li data-menu-item>
+          <a href="#reviews">Reviews</a>
+        </li>
+        <li data-menu-item>
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li data-menu-item>
+          <a href="#about">About This Game</a>
+        </li>
+        <li data-menu-item>
+          <a href="#faq">FAQ</a>
+        </li>
+        <li data-menu-item>
+          <a href="#benefits">Benefits</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>

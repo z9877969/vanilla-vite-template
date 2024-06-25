@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -37,6 +38,8 @@ a {
 }
 
 button {
+  padding: 0;
+  margin: 0;
   cursor: pointer;
 }
 
