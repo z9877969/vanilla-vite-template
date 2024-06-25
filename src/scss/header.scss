@@ -1,22 +1,21 @@
 .header {
-  padding: 20px 0;
+  background-color: $_header_bg;
 }
 
-.nav-list {
+.header-mobile {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 40px 0 16px;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  @include font(30, 40);
-  color: $_header_color;
+.burger {
+  stroke: $_title_color;
+  width: 100%;
+  height: 100%;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: $_header_accent_color;
+.burger-button {
+  border: none;
+  background-color: transparent;
 }
