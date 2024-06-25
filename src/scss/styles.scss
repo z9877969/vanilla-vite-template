@@ -9,13 +9,15 @@
 @import './footer.scss';
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: Open-Sans, Inter, Raleway, Rubik, Charm, Playfair-Display,
+    sans-serif;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.05em;
 
-  color: #242424;
-  background-color: rgba(244, 228, 207, 0.77);
+  color: $_main_text_color;
+  background-color: $_main_bg_color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,12 +31,22 @@
 
 .container {
   width: 320px;
-  padding: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: 1280px) {
     width: 1440px;
-    padding: 0 120px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
+}
+
+.title {
+  font-family: $_font-playfair;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  color: $_title_color;
 }
