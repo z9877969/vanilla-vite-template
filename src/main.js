@@ -1,13 +1,12 @@
 const swiper = new Swiper('.swiper-container', {
   loop: false,
   speed: 500,
-  spaceBetween: 40,
   navigation: {
     nextEl: '.swiper-next',
     prevEl: '.swiper-prev',
   },
   breakpoints: {
-    1280: {
+    1220: {
       slidesPerView: 2,
       slidesPerGroup: 1,
       spaceBetween: 80,
@@ -45,3 +44,14 @@ function updateNavigationButtons(swiper) {
     nextButton.classList.remove('inactive');
   }
 }
+
+const swiperGallery = new Swiper('.swiperGallery', {
+  slidesPerView: 2,
+  spaceBetween: 40,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 100000000,
+    disableOnInteraction: false,
+  },
+});

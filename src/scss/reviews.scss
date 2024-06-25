@@ -1,14 +1,10 @@
 .reviews {
   padding: 50px 0px;
-  overflow: hidden;
 }
 .swiper-wrapper {
   display: flex;
-  width: 328px;
-
-  @media (min-width: 1280px) {
-    width: 631px;
-  }
+  width: 1220px;
+  height: 208px;
 }
 .swiper-container {
   display: flex;
@@ -25,7 +21,7 @@
   line-height: 53.32px;
   color: $_title_color;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1220px) {
     font-size: 64px;
     line-height: 85.31px;
   }
@@ -38,7 +34,7 @@
   line-height: 21.79px;
   color: $_main_text_color;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1220px) {
     font-size: 24px;
     line-height: 32.68px;
   }
@@ -51,7 +47,7 @@
   line-height: 28px;
   color: $_main_text_color;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1220px) {
     font-size: 24px;
     line-height: 35px;
   }
@@ -81,7 +77,7 @@
 .swiper-next img {
   width: 50px;
   height: 50px;
-  @media (min-width: 1280px) {
+  @media (min-width: 1220px) {
     width: 62px;
     height: 62px;
   }
@@ -93,20 +89,13 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-
-  @media (min-width: 1280px) {
-    gap: 24px;
-    height: 162px;
-    width: 503px;
-    padding: 24px;
-  }
-}
-
-.swiper-slide {
   border-radius: 8px;
   background: $_background_gradient;
 
-  @media (min-width: 1280px) {
-    width: 551px;
+  @media (min-width: 1220px) {
+    gap: 24px;
+    height: 162px;
+    width: 523px;
+    padding: 24px;
   }
 }
