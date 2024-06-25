@@ -23,7 +23,7 @@
   font-size: 40px;
   font-weight: 400;
   line-height: 53.32px;
-  color: var(--title-color);
+  color: $_title_color;
 
   @media (min-width: 1280px) {
     font-size: 64px;
@@ -36,7 +36,7 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 21.79px;
-  color: var(--text-color);
+  color: $_main_text_color;
 
   @media (min-width: 1280px) {
     font-size: 24px;
@@ -49,7 +49,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  color: var(--text-color);
+  color: $_main_text_color;
 
   @media (min-width: 1280px) {
     font-size: 24px;
@@ -104,11 +104,7 @@
 
 .swiper-slide {
   border-radius: 8px;
-  background: linear-gradient(
-    90deg,
-    rgba(219, 168, 90, 0.8) 20%,
-    rgba(142, 219, 203, 0.8) 80%
-  );
+  background: $_background_gradient;
 
   @media (min-width: 1280px) {
     width: 551px;
