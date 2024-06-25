@@ -1,12 +1,13 @@
 .header {
   background-color: $_header_bg;
+  padding-top: 40px;
+  padding-bottom: 16px;
 }
 
 .header-mobile {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 40px 0 16px;
 }
 
 .burger {
