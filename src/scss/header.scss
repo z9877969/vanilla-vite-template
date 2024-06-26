@@ -61,6 +61,7 @@
   transform-origin: top;
   pointer-events: none;
   z-index: 666;
+  overflow-x: auto;
 
   transform: scaleY(0);
   transition: transform 800ms $_animation_function;

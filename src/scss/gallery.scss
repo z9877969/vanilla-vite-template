@@ -1,5 +1,7 @@
 .gallery {
+  position: relative;
   padding: 50px 0px;
+  z-index: 0;
 }
 .galleryDiv {
   justify-content: center;
