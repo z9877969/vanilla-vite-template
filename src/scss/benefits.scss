@@ -1,0 +1,72 @@
+.stats {
+  background-image: url('../img/benefits/benefits-bg-mob.webp');
+  background-size: 320px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include media(desktop) {
+    background-image: url('../img/benefits/benefits-bg-desk.webp');
+    background-size: auto auto;
+    background-position: left bottom;
+  }
+}
+
+.benefits {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  @include media(desktop) {
+    padding-bottom: 160px;
+  }
+}
+
+.benefit-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px;
+  column-gap: 32px;
+  row-gap: 40px;
+
+  @include media(desktop) {
+    padding: 0;
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  width: 120px;
+
+  p {
+    font-family: $_font-open-sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: #2e3e28;
+
+    @include media(desktop) {
+      font-size: 24px;
+      line-height: 1.45;
+    }
+  }
+
+  @include media(desktop) {
+    width: 179px;
+    gap: 28px;
+
+    img {
+      width: 144px;
+      height: 144px;
+    }
+  }
+}
