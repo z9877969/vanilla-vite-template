@@ -6,7 +6,7 @@ export const swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-prev',
   },
   breakpoints: {
-    1220: {
+    1440: {
       slidesPerView: 2,
       slidesPerGroup: 1,
       spaceBetween: 80,
