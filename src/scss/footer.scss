@@ -23,6 +23,21 @@
   height: 46px;
   background-color: $_third_text_color;
   color: $_google_btn;
+
+  @include media(desktop) {
+    width: 225px;
+    height: 64px;
+    padding: 12px 40px;
+    top: 24px;
+    right: 120px;
+  }
+}
+
+.google:hover,
+.google:focus,
+.google:active {
+  background-color: $_google_light_active;
+  transition: $_animation_duration $_animation_function;
 }
 
 .goo {

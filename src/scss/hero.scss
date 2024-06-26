@@ -79,14 +79,10 @@
   }
 
   a:hover,
-  a:focus {
-    outline: 4px solid $_third_text_color;
-    transition: $_animation_duration $_animation_function;
-  }
-
+  a:focus,
   a:active {
-    outline: none;
     background-color: $_google_active;
+    transition: $_animation_duration $_animation_function;
   }
 }
 
