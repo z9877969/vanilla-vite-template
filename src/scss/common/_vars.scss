@@ -9,11 +9,19 @@ $_burger_bg: #2b5127;
 $_google_btn: #2b5127;
 $_google_active: #1d361a;
 $_google_light_active: #8dae88;
+
 $_background_gradient: linear-gradient(
   39deg,
   rgba(219, 168, 90, 0.8) 0%,
   rgba(142, 219, 203, 0.8) 99.5%
 );
+$_section_bg_gradient: linear-gradient(
+  360deg,
+  rgba(225, 217, 174, 0.9) 8.8%,
+  rgba(218, 204, 167, 0.9) 48.5%,
+  rgba(207, 168, 148, 0.9) 100%
+);
+
 $_font-raleway: 'Raleway';
 $_font-open-sans: 'Open Sans';
 $_font-inter: 'Inter';

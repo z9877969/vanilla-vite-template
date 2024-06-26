@@ -10,8 +10,17 @@
   }
 }
 
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
 .about .container {
-  padding: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,23 +31,27 @@
   justify-content: center;
   width: 288px;
   height: 178px;
-  border-radius: 9px 0px 0px 0px;
-  @media (min-width: 1440px) {
+  border-radius: 9px;
+
+  @include media(desktop) {
     width: 483px;
     height: 304px;
-    border-radius: 16px 16px 16px 0px;
+    border-radius: 16px;
   }
 }
 
 .textAbout {
-  font-family: Open Sans;
+  font-family: $_font-open-sans;
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
-  @media (min-width: 1440px) {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
     font-size: 24px;
     line-height: 40px;
     width: 633px;
+    margin-bottom: 40px;
   }
 }
 
@@ -47,10 +60,70 @@
   flex-direction: column;
   gap: 24px;
   width: 288px;
-  @media (min-width: 1440px) {
+
+  @include media(desktop) {
     flex-direction: row-reverse;
     gap: 84px;
     justify-content: center;
     width: 100%;
   }
+}
+
+.market {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $_google_btn;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin: 0 auto;
+  width: 141px;
+  height: 46px;
+
+  @include media(desktop) {
+    width: 225px;
+    height: 64px;
+    padding: 12px 40px;
+    margin: 0;
+  }
+
+  b {
+    display: inline-block;
+    font-family: $_font-inter;
+    color: $_third_text_color;
+    font-weight: 400;
+    font-size: 8px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+
+    @include media(desktop) {
+      font-size: 12px;
+    }
+  }
+}
+
+.market:hover,
+.market:focus,
+.market:active {
+  background-color: $_google_active;
+  transition: $_animation_duration $_animation_function;
+}
+
+.goo {
+  @include media(desktop) {
+    width: 36px;
+    height: 40px;
+  }
+}
+
+.play {
+  @include media(desktop) {
+    width: 99px;
+    height: 20px;
+  }
+}
+
+.get {
+  display: flex;
+  flex-direction: column;
 }

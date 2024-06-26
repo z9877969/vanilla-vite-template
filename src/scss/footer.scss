@@ -99,11 +99,12 @@
 .slash::after {
   content: '';
   position: absolute;
-  bottom: 3px;
+  bottom: 2px;
   right: -9px;
   width: 1px;
   height: 10px;
   background-color: $_third_text_color;
+
   @include media(desktop) {
     height: 12px;
     bottom: 5px;
@@ -113,6 +114,7 @@
 
 .nav {
   margin-bottom: 12px;
+
   @include media(desktop) {
     margin-bottom: 0;
   }
