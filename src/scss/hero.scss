@@ -1,7 +1,7 @@
 .hero {
   padding-top: 128px;
   padding-bottom: 28px;
-  background-image: url('../img/hero-bg.webp');
+  background-image: url('../img/hero/hero-bg.webp');
   background-size: 320px auto;
   background-position: top;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
   @include media(desktop) {
     padding-top: 238px;
     padding-bottom: 123px;
-    background-image: url('../img/hero-bg-desk.webp');
+    background-image: url('../img/hero/hero-bg-desk.webp');
     background-size: 1440px auto;
   }
 

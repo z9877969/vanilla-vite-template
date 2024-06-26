@@ -46,6 +46,7 @@
   font-size: 40px;
   letter-spacing: 0.05em;
   color: $_title_color;
+  text-align: center;
 
   @include media(desktop) {
     font-size: 64px;
