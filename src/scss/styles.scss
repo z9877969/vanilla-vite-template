@@ -33,7 +33,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: 1220px) {
+  @include media(desktop) {
     width: 1440px;
     padding-left: 120px;
     padding-right: 120px;
