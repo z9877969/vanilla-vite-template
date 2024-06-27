@@ -11,8 +11,6 @@
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
-    // width: 1440px;
-    // margin: 0 auto;
 
     background-image: url('../img/faq/towers.webp'),
       url('../img/faq/towers.webp'), $_section_bg_gradient;
@@ -58,6 +56,8 @@
   font-weight: 600;
   padding: 9px 16px;
   cursor: pointer;
+
+  transition: font-weight $_animation_duration $_animation_function;
 
   @include media(desktop) {
     font-size: 24px;
