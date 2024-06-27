@@ -2,8 +2,9 @@
   position: fixed;
   width: 100%;
   background-color: $_header_bg;
-  padding-top: 40px;
-  padding-bottom: 16px;
+  backdrop-filter: blur(8px);
+  padding-top: 13px;
+  padding-bottom: 13px;
   z-index: 1;
 
   @include media(desktop) {

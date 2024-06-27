@@ -1,12 +1,10 @@
 .stats {
   background-image: url('../img/benefits/benefits-bg-mob.webp');
-  background-size: 320px auto;
-  background-position: center;
+  background-size: cover;
+  background-position: center -75px;
   background-repeat: no-repeat;
 
   @include media(desktop) {
-    // width: 1440px;
-    // margin: 0 auto;
     background-image: url('../img/benefits/benefits-bg-desk.webp');
     background-size: auto auto;
     background-position: left bottom;

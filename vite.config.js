@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-// import glob from 'glob';
+import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
@@ -11,39 +11,39 @@ export default defineConfig(({ command }) => {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
-    // build: {
-    //   sourcemap: true,
+    build: {
+      sourcemap: true,
 
-    //   rollupOptions: {
-    //     input: glob.sync('./src/*.html'),
-    //     output: {
-    //       manualChunks(id) {
-    //         if (id.includes('node_modules')) {
-    //           return 'vendor';
-    //         }
-    //       },
-    //       entryFileNames: 'commonHelpers.js',
-    //     },
-    //   },
-    //   outDir: '../dist',
-    // },
+      rollupOptions: {
+        input: glob.sync('./src/*.html'),
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              return 'vendor';
+            }
+          },
+          entryFileNames: 'commonHelpers.js',
+        },
+      },
+      outDir: '../dist',
+    },
     plugins: [
       injectHTML(),
       FullReload(['./src/**/**.html']),
-      ViteImageOptimizer({
-        png: {
-          // https://sharp.pixelplumbing.com/api-output#png
-          quality: 60,
-        },
-        jpeg: {
-          // https://sharp.pixelplumbing.com/api-output#jpeg
-          quality: 60,
-        },
-        jpg: {
-          // https://sharp.pixelplumbing.com/api-output#jpeg
-          quality: 60,
-        },
-      }),
+      // ViteImageOptimizer({
+      //   png: {
+      //     // https://sharp.pixelplumbing.com/api-output#png
+      //     quality: 60,
+      //   },
+      //   jpeg: {
+      //     // https://sharp.pixelplumbing.com/api-output#jpeg
+      //     quality: 60,
+      //   },
+      //   jpg: {
+      //     // https://sharp.pixelplumbing.com/api-output#jpeg
+      //     quality: 60,
+      //   },
+      // }),
     ],
     css: {
       preprocessorOptions: {
