@@ -75,14 +75,12 @@
 .revGal {
   overflow: hidden;
   background-image: url('../img/rewGalBg/reviews-gallery-bg.webp');
-  background-size: auto;
-  background-position: top;
+  background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
 
   @include media(desktop) {
     margin: 0 auto;
-    background-image: url('../img/rewGalBg/reviews-gallery-bg.webp');
-    background-size: auto auto;
   }
 }
 
