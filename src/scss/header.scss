@@ -25,6 +25,13 @@
   @include media(desktop) {
     width: 100px;
     height: 79px;
+
+    transition: transform $_animation_duration $_animation_function;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
   }
 }
 
