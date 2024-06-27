@@ -5,8 +5,8 @@
   background-repeat: no-repeat;
 
   @include media(desktop) {
-    width: 1440px;
-    margin: 0 auto;
+    // width: 1440px;
+    // margin: 0 auto;
     background-image: url('../img/benefits/benefits-bg-desk.webp');
     background-size: auto auto;
     background-position: left bottom;

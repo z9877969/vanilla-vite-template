@@ -4,4 +4,6 @@ export const refs = {
   burgerMenu: document.querySelector('[data-burger-menu]'),
   burgerItem: document.querySelectorAll('[data-menu-item]'),
   bodyScroll: document.body,
+
+  accordionItems: document.querySelectorAll('.accordion-item'),
 };
