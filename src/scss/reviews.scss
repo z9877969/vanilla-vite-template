@@ -3,6 +3,85 @@
   padding: 50px 0px;
   z-index: 0;
 }
+
+.revDiamonds1 {
+  position: absolute;
+  top: 18px;
+  left: 55px;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds2 {
+  top: 222px;
+  right: 242px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds3 {
+  top: 18px;
+  right: -24px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds4 {
+  top: 198px;
+  left: 600px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds5 {
+  top: 330px;
+  left: 299px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds6 {
+  top: 444px;
+  left: -35px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds7 {
+  top: 590px;
+  left: 196px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds8 {
+  top: 556px;
+  right: -32px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revGal {
+  overflow: hidden;
+  background-image: url('../img/rewGalBg/reviews-gallery-bg.webp');
+  background-size: auto;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  @include media(desktop) {
+    margin: 0 auto;
+    background-image: url('../img/rewGalBg/reviews-gallery-bg.webp');
+    background-size: auto auto;
+  }
+}
+
 .swiper-wrapper {
   display: flex;
   width: 288px;
