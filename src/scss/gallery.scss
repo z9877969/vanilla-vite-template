@@ -4,12 +4,19 @@
   z-index: 0;
 }
 
+.gallery .container {
+  @include media(to-desktop) {
+    max-width: 570px;
+    width: 100%;
+  }
+}
+
 .galleryDiv {
   justify-content: center;
 }
 
 .galleryTitle {
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   text-align: center;
   font-family: 'Playfair Display', serif;
   font-size: 40px;
@@ -69,18 +76,15 @@
   }
 }
 
-.gallerySlide .backside-slide {
-  opacity: 0.3;
-  transition: opacity 1s ease;
-
-  @include media(desktop) {
-    width: 260px !important;
-    height: 462px !important;
-  }
-}
-
 .swipergallery {
+  width: 360px;
+  @include media(desktop) {
+    width: 1185px;
+  }
   overflow: hidden;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
 }
 
 .gallery .container {
