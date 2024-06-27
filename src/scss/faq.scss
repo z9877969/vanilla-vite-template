@@ -16,8 +16,8 @@
 
     background-image: url('../img/faq/towers.webp'),
       url('../img/faq/towers.webp'), $_section_bg_gradient;
-    background-size: auto 705px;
-    background-position: left bottom, right bottom;
+    background-size: auto 705px, auto 733px, 100% 100%;
+    background-position: left bottom, right bottom, center;
     background-repeat: no-repeat;
   }
 
@@ -127,4 +127,48 @@
 
 .accordion-header.active .circle {
   border-color: $_google_active;
+}
+
+.container.accord {
+  position: relative;
+}
+
+.yellow {
+  position: absolute;
+  left: 13px;
+  bottom: -34px;
+
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+
+.gold {
+  position: absolute;
+  top: -95px;
+  right: 97px;
+
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+
+.green {
+  position: absolute;
+  left: 50%;
+  bottom: -144px;
+
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+
+.blue {
+  position: absolute;
+  left: 152px;
+  top: -13px;
+
+  @include media(to-desktop) {
+    display: none;
+  }
 }
