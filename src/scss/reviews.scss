@@ -1,7 +1,11 @@
 .reviews {
   position: relative;
-  padding: 50px 0px;
+  padding: 60px 0px;
   z-index: 0;
+
+  @include media(desktop) {
+    padding: 80px 0;
+  }
 }
 
 .revDiamonds1 {

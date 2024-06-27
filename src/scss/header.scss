@@ -3,12 +3,11 @@
   width: 100%;
   background-color: $_header_bg;
   backdrop-filter: blur(8px);
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding: 13px 0;
   z-index: 1;
 
   @include media(desktop) {
-    padding-top: 16px;
+    padding: 8px 0;
   }
 }
 

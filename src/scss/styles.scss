@@ -28,6 +28,14 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.section {
+  scroll-margin-top: 75px;
+
+  @include media(desktop) {
+    scroll-margin-top: 100px;
+  }
+}
+
 .container {
   width: 320px;
   padding-left: 16px;
