@@ -1,0 +1,174 @@
+.faq {
+  background-image: $_section_bg_gradient;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    background-image: url('../img/faq/towers.webp'),
+      url('../img/faq/towers.webp'), $_section_bg_gradient;
+    background-size: auto 705px, auto 733px, 100% 100%;
+    background-position: left bottom, right bottom, center;
+    background-repeat: no-repeat;
+  }
+
+  h2 {
+    margin-bottom: 24px;
+
+    @include media(desktop) {
+      margin-bottom: 56px;
+    }
+  }
+}
+
+.accordion {
+  width: 100%;
+  max-width: 840px;
+  margin: 20px auto;
+  color: $_main_text_color;
+}
+.accordion-item {
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background-image: $_background_gradient;
+
+  @include media(desktop) {
+    margin-bottom: 16px;
+  }
+}
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $_font-open-sans;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 9px 16px;
+  cursor: pointer;
+
+  transition: font-weight $_animation_duration $_animation_function;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    padding: 16px 24px;
+  }
+}
+
+.accordion-header.active {
+  font-weight: 400;
+  border-bottom: 0.2px solid $_header_menu;
+}
+
+.accordion-content {
+  font-family: $_font-open-sans;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  transition: max-height $_animation_duration $_animation_function;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    padding: 0 24px;
+  }
+}
+.accordion-content p {
+  margin: 8px 0;
+  @include media(desktop) {
+    margin: 16px 0;
+  }
+}
+.accordion-header.active .accordion-icon {
+  stroke: $_google_active;
+  transform: rotate(180deg);
+}
+.accordion-icon {
+  transition: transform $_animation_duration $_animation_function;
+  stroke: $_burger_bg;
+
+  @include media(desktop) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid $_burger_bg;
+  border-radius: 50%;
+
+  @include media(desktop) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.accordion-header.active .circle {
+  border-color: $_google_active;
+}
+
+.container.accord {
+  position: relative;
+}
+
+.yellow {
+  position: absolute;
+  left: 13px;
+  bottom: -34px;
+
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+
+.gold {
+  position: absolute;
+  top: -95px;
+  right: 97px;
+
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+
+.green {
+  position: absolute;
+  left: 50%;
+  bottom: -144px;
+
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+
+.blue {
+  position: absolute;
+  left: 152px;
+  top: -13px;
+
+  @include media(to-desktop) {
+    display: none;
+  }
+}
