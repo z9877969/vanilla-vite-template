@@ -13,6 +13,14 @@
 
 .logo-foot {
   cursor: pointer;
+  transition: transform $_animation_duration $_animation_function;
+
+  @include media(desktop) {
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .google {

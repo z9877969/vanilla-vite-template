@@ -1,7 +1,11 @@
 .reviews {
   position: relative;
-  padding: 50px 0px;
+  padding: 60px 0px;
   z-index: 0;
+
+  @include media(desktop) {
+    padding: 80px 0;
+  }
 }
 
 .revDiamonds1 {
@@ -71,14 +75,12 @@
 .revGal {
   overflow: hidden;
   background-image: url('../img/rewGalBg/reviews-gallery-bg.webp');
-  background-size: auto;
-  background-position: top;
+  background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
 
   @include media(desktop) {
     margin: 0 auto;
-    background-image: url('../img/rewGalBg/reviews-gallery-bg.webp');
-    background-size: auto auto;
   }
 }
 

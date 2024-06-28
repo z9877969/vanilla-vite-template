@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   padding-top: 128px;
-  padding-bottom: 28px;
+  padding-bottom: 18px;
   background-image: url('../img/hero/hero-bg-mob.webp');
   background-size: cover;
   background-position: top;
@@ -39,7 +39,7 @@
     font-weight: 400;
     font-size: 16px;
     width: 195px;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
 
     @include media(desktop) {
       font-size: 32px;
@@ -112,8 +112,8 @@
 
 .queen-mob {
   position: absolute;
-  right: 11px;
-  bottom: -28px;
+  right: 0;
+  bottom: -18px;
 
   @include media(desktop) {
     display: none;
