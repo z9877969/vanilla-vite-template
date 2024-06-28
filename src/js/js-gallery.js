@@ -52,8 +52,8 @@ const swiper = new Swiper('.swiper', {
     },
 
     1440: {
-      slidesPerView: 3.3,
-      spaceBetween: 80,
+      slidesPerView: 3.4,
+      spaceBetween: 75,
     },
   },
   autoplay: {

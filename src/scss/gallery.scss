@@ -7,6 +7,12 @@
     padding: 80px 0;
   }
 }
+.gallery .container {
+  margin-bottom: 24px;
+  @include media(desktop) {
+    margin-bottom: 56px;
+  }
+}
 
 .gallery_slider {
   width: 100%;
