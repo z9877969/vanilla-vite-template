@@ -3,16 +3,6 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   centeredSlides: true,
   speed: 800,
-  // breakpoints: {
-  //   1440: {
-  //     slidesPerView: 3.3,
-  //     spaceBetween: 80,
-  //   },
-  //   0: {
-  //     slidesPerView: 2.1,
-  //     spaceBetween: 15,
-  //   },
-  // },
   breakpoints: {
     340: {
       slidesPerView: 2.05,
