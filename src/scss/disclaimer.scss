@@ -1,0 +1,27 @@
+.disclaimer {
+  padding-bottom: 80px;
+
+  h2 {
+    margin-bottom: 24px;
+
+    @include media(desktop) {
+      margin-bottom: 56px;
+    }
+  }
+
+  p {
+    font-family: $_font-open-sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.05em;
+    color: $_main_text_color;
+
+    @include media(desktop) {
+      width: 908px;
+      margin: 0 auto;
+      font-size: 24px;
+      line-height: 1.5;
+    }
+  }
+}

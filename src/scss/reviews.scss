@@ -1,0 +1,185 @@
+.reviews {
+  position: relative;
+  padding: 60px 0px;
+  z-index: 0;
+
+  @include media(desktop) {
+    padding: 80px 0;
+  }
+}
+
+.revDiamonds1 {
+  position: absolute;
+  top: 18px;
+  left: 55px;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds2 {
+  top: 222px;
+  right: 242px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds3 {
+  top: 18px;
+  right: -24px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds4 {
+  top: 198px;
+  left: 600px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds5 {
+  top: 330px;
+  left: 299px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds6 {
+  top: 444px;
+  left: -35px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds7 {
+  top: 590px;
+  left: 196px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revDiamonds8 {
+  top: 556px;
+  right: -32px;
+  position: absolute;
+  @include media(to-desktop) {
+    display: none;
+  }
+}
+.revGal {
+  overflow: hidden;
+  background-image: url('../img/rewGalBg/reviews-gallery-bg.webp');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  @include media(desktop) {
+    margin: 0 auto;
+  }
+}
+
+.reviews .container .swiper-container .swiper-wrapper {
+  display: flex;
+  width: 288px;
+  height: 182px;
+
+  @include media(desktop) {
+    width: 1200px;
+    height: 208px;
+  }
+}
+
+.swiper-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.reviewsTitle {
+  padding-bottom: 24px;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 64px;
+  }
+}
+
+.cardsTitleRev {
+  font-family: $_font-open-sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.79px;
+  color: $_main_text_color;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 32.68px;
+  }
+}
+
+.cardsTextRev {
+  font-family: $_font-open-sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: $_main_text_color;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+.prevnext {
+  padding-top: 24px;
+  display: flex;
+  gap: 104px;
+  justify-content: center;
+}
+
+.swiper-prev,
+.swiper-next {
+  cursor: pointer;
+  z-index: 5;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.swiper-prev.inactive,
+.swiper-next.inactive {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.swiper-prev img,
+.swiper-next img {
+  width: 50px;
+  height: 50px;
+
+  @include media(desktop) {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+.cardsRev {
+  height: 150px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  background: $_background_gradient;
+
+  @include media(desktop) {
+    gap: 24px;
+    height: 162px;
+    width: 523px;
+    padding: 24px;
+  }
+}

@@ -1,2 +1,1 @@
-# Vanilla-vite-template
-
+# Jewel Queen: Puzzle & Magic

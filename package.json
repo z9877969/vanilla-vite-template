@@ -1,7 +1,7 @@
 {
-  "name": "vanilla-vite-template",
+  "name": "jewel-queen",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -22,6 +22,7 @@
   "author": "Andrii Kyrylenko <z9877969@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "swiper": "^11.1.4",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }

@@ -1,0 +1,63 @@
+.policy {
+  padding-top: 144px;
+  padding-bottom: 80px;
+
+  h2 {
+    font-family: $_font-open-sans;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: $_title_color;
+    margin-bottom: 32px;
+  }
+
+  h3 {
+    font-family: $_font-raleway;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-family: $_font-open-sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    margin-bottom: 34px;
+  }
+
+  b {
+    font-family: $_font-open-sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+  }
+
+  @include media(desktop) {
+    padding-top: 191px;
+
+    h2 {
+      font-family: $_font-playfair;
+      font-size: 64px;
+      letter-spacing: 0.05em;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-family: $_font-open-sans;
+      font-size: 24px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    b {
+      font-size: 20px;
+    }
+  }
+}

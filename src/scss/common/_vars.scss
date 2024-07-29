@@ -1,4 +1,33 @@
-$_main_color: #242424;
-$_main_bg_color: rgba(255, 255, 255, 0.87);
-$_header_color: #747bff;
-$_header_accent_color: red;
+$_title_color: #062442;
+$_main_text_color: #05101c;
+$_third_text_color: #ddfcd9;
+$_main_bg_color: #d3bca5;
+$_second_bg_color: #f4e4cf;
+$_header_bg: rgba(68, 117, 62, 0.4);
+$_header_menu: rgba(49, 103, 43, 0.7);
+$_burger_bg: #2b5127;
+$_google_btn: #2b5127;
+$_google_active: #1d361a;
+$_google_light_active: #8dae88;
+
+$_background_gradient: linear-gradient(
+  39deg,
+  rgba(219, 168, 90, 0.8) 0%,
+  rgba(142, 219, 203, 0.8) 99.5%
+);
+$_section_bg_gradient: linear-gradient(
+  360deg,
+  rgba(225, 217, 174, 0.9) 8.8%,
+  rgba(218, 204, 167, 0.9) 48.5%,
+  rgba(207, 168, 148, 0.9) 100%
+);
+
+$_font-raleway: 'Raleway';
+$_font-open-sans: 'Open Sans';
+$_font-inter: 'Inter';
+$_font-rubik: 'Rubik';
+$_font-playfair: 'Playfair Display';
+$_font-charm: 'Charm';
+
+$_animation_function: cubic-bezier(0.4, 0, 0.2, 1);
+$_animation_duration: 400ms;
