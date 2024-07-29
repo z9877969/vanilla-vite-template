@@ -53,6 +53,6 @@ export default defineConfig(({ command }) => {
         },
       },
     },
-    base: '/buggle-2',
+    base: '/buggle-2/',
   };
 });

@@ -3,14 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://M-Farmaha.github.io/buggle-2",
+  "homepage": "https://m-farmaha.github.io/buggle-2/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/buggle-2",
+    "build": "vite build --base=/buggle-2/",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "gh-pages:404": "cp build/index.html build/404.html"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
@@ -22,7 +21,7 @@
     "vite": "^4.5.2",
     "vite-plugin-image-optimizer": "^1.1.8"
   },
-  "author": "Andrii Kyrylenko <z9877969@gmail.com>",
+  "author": "Max Farmaha <maks.farmaha@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.0.5",
