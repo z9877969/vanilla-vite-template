@@ -9,7 +9,16 @@
     "build": "vite build --base=/buggle-2/",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build",
+    "gh-pages:404": "cp build/index.html build/404.html"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start --port=6789",
+    "build": "react-scripts build",
+    "gh-pages:404": "cp build/index.html build/404.html",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
