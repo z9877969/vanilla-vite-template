@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '18' # або ваша версія Node.js
 
       - name: Install dependencies
         run: npm install
@@ -26,10 +26,12 @@ jobs:
 
       - name: Configure git
         run: |
-          git config --global user.email "maks.farmaha@gmail.com"
-          git config --global user.name "Max Farmaha"
+          git config --global user.email "your-email@example.com"
+          git config --global user.name "Your Name"
 
       - name: Deploy to GitHub Pages
-        run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/m-farmaha/buggle-2.git
+          npm run deploy
