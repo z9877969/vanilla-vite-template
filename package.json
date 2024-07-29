@@ -3,14 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://M-Farmaha.github.io/buggle-2/",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/buggle-2/",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "netlify deploy -p"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "glob": "^8.1.0",
     "netlify-cli": "^17.30.0",
     "sass": "^1.77.6",
