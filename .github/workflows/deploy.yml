@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
@@ -23,6 +23,11 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+      - name: Configure git
+        run: |
+          git config --global user.email "maks.farmaha@gmail.com"
+          git config --global user.name "Max Farmaha"
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
