@@ -1,0 +1,28 @@
+.buggle {
+  padding: 27px 0;
+  padding-bottom: 77px;
+
+  &-link {
+    position: absolute;
+    top: 500px;
+
+    width: 202px;
+    height: 59px;
+    border: 1px solid $_accent_color;
+    color: $_black_font_color;
+    background-color: $_white_font_color;
+    border-radius: 30px;
+    display: flex;
+
+    padding-left: 35px;
+    align-items: center;
+  }
+  &-google-pay {
+    margin-right: 8px;
+  }
+
+  &-title {
+    position: absolute;
+    top: 300px;
+  }
+}

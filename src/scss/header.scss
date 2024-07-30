@@ -8,23 +8,19 @@
   justify-content: center;
   gap: 40px;
 
-  @include media(tablet) {
-    justify-content: flex-start;
-  }
-
   @include media(desktop) {
     justify-content: flex-end;
   }
 }
 
 .nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  @include font(30, 40);
-  color: $_header_color;
-}
+  color: $_white_font_color;
+  font-size: 30px;
 
-.nav-link:hover,
-.nav-link:focus {
-  color: $_header_accent_color;
+  transition: $_main_transition;
+
+  &:hover,
+  &:focus {
+    color: $_accent_color;
+  }
 }
