@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@500&display=swap');
 @import './header.scss';
-@import './vite-promo.scss';
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: $_main_font_family;
+  font-size: $_main_font_size;
   line-height: 24px;
   font-weight: 400;
+  font-style: normal;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: $_main_text_color;
+  background-color: $_main_bg_color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

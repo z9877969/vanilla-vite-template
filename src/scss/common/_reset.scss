@@ -1,5 +1,7 @@
 /* Reset styles */
+//@import 'node_modules/modern-normalize/modern-normalize.css';
 
+@import './container';
 html {
   box-sizing: border-box;
 }
