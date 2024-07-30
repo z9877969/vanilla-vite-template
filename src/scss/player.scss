@@ -1,0 +1,41 @@
+
+.players {
+  padding-bottom: 70px;
+
+  &-title {
+    font-size: 60px;
+    color: $_accent_color;
+    font-weight: $_main_font_weight;
+    line-height: 53px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &-item {
+    font-size: 45px;
+    line-height: 40px;
+    font-weight: $_main_font_weight;
+    margin-bottom: 35px;
+    width: 400px;
+    margin-right: 250px;
+    // margin-right: 100px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &--span {
+      color: $_accent_color;
+      margin-top: 30px;
+      display: block;
+    }
+  }
+}
+

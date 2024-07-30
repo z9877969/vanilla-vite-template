@@ -24,3 +24,18 @@
 
 //   line-height: math.div(math.round($result * 100), 100);
 // }
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  min-width: 320px;
+  width: 100vw;
+
+  @include media(to-desktop) {
+    width: 768px;
+  }
+
+  @include media(desktop) {
+    width: 1200px;
+  }
+}
