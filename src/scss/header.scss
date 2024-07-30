@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+  position: absolute;
+  padding-top: 23px;
+  @include media(desktop) {
+    padding-top: 36px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo--origin {
+    display: none;
+    @include media(desktop) {
+      display: flex;
+    }
+  }
+  &__logo--min {
+    @include media(desktop) {
+      display: none;
+    }
+  }
+}
+
+.navigation {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__link {
+    @include font(20, 24);
+  }
+}
+
+.open-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  @include media(desktop) {
+    display: none;
+  }
+}

@@ -1,0 +1,87 @@
+.hero {
+  padding-top: 89px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-image: url(../img/hero-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/hero-2x.jpg);
+  }
+
+  @include media(desktop) {
+    padding-top: 142px;
+    padding-bottom: 59px;
+    background-image: url(../img/hero-origin-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/hero-origin-2x.jpg);
+    }
+  }
+
+  &__content {
+    text-align: center;
+    @include media(desktop) {
+      text-align: left;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+
+    @include media(desktop) {
+      flex-direction: row;
+      align-items: center;
+      gap: 191px;
+    }
+  }
+
+  &__title {
+    @include font(24, 29);
+    font-weight: 400;
+    margin-bottom: 16px;
+
+    @include media(desktop) {
+      @include font(80, 96);
+      margin-bottom: 28px;
+      width: 344px;
+    }
+  }
+
+  &__description {
+    @include font(12, 14.4);
+    margin-bottom: 20px;
+
+    @include media(desktop) {
+      @include font(24, 28.8);
+      margin-bottom: 36px;
+      width: 552px;
+    }
+  }
+
+  &__link--min {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    @include media(desktop) {
+      display: none;
+    }
+  }
+
+  &__link--origin {
+    display: none;
+    @include media(desktop) {
+      display: flex;
+    }
+  }
+
+  &__image {
+    margin: 0 auto;
+  }
+}

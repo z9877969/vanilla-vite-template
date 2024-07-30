@@ -1,18 +1,13 @@
 @use 'sass:math';
 @import './breakpoints';
 
-$breakpoints: (
-  mobile: $mobile,
-  desktop: $desktop,
-);
-
-@mixin media-query($breakpoint) {
-  @if $breakpoint == mobile {
-    @media only screen and (max-width: #{map-get($breakpoints, desktop) - 1px}) {
+@mixin media($_screen) {
+  @if $_screen == mobile {
+    @media screen and (min-width: $mobile) {
       @content;
     }
-  } @else if $breakpoint == desktop {
-    @media only screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+  } @else if $_screen == desktop {
+    @media screen and (min-width: $desktop) {
       @content;
     }
   }

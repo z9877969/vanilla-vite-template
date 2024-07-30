@@ -1,13 +1,15 @@
 .container {
-  max-width: 320px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 16px;
 
-  @include media-query($mobile) {
+  @include media(mobile) {
+    max-width: 320px;
   }
 
-  @include media-query($desktop) {
-    padding: 156px;
+  @include media(desktop) {
+    padding: 0 156px;
+    max-width: 1440px;
   }
 }
