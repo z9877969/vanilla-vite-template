@@ -1,0 +1,29 @@
+@include media(desktop) {
+  .about__container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 12px;
+    align-items: center;
+  }
+}
+
+.about__header-text {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    width: 550px;
+    margin: 0;
+  }
+}
+
+.about__title {
+  margin-bottom: 32px;
+}
+
+.about__desc {
+  @include font(18, 24);
+
+  @include media(desktop) {
+    @include font(24, 32);
+  }
+}
