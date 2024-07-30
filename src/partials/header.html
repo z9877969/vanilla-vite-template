@@ -1,3 +1,47 @@
 <header class="header">
-  <div class="container"></div>
+  <div class="container">
+    <ul class="menu">
+      <li><a class="menuItem" href="#">Home</a></li>
+      <li><a class="menuItem" href="#">Benefits</a></li>
+      <li><a class="menuItem" href="#">About</a></li>
+      <li><a class="menuItem" href="#">FAQ</a></li>
+      <li><a class="menuItem" href="#">How to play</a></li>
+      <li><a class="menuItem" href="#">Advantages</a></li>
+      <li><a class="menuItem" href="#">Gallery</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()">
+      <svg
+        class="menuIcon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+      >
+        <path
+          d="M3 6h18M3 12h18M3 18h18"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <svg
+        class="closeIcon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+        style="display: none"
+      >
+        <path
+          d="M6 18L18 6M6 6l12 12"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </div>
 </header>
+<script type="module" src="../JS/burger.js"></script>
