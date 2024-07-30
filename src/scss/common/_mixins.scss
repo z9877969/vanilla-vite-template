@@ -1,24 +1,9 @@
 @use 'sass:math';
 @import './breakpoints';
-/*
-screen types: 
-    mobile,
-    to-tablet
-    tablet,
-    to-desktop
-    desktop,
-*/
+
 @mixin media($_screen) {
   @if $_screen == mobile {
     @media screen and (min-width: $mobile) {
-      @content;
-    }
-  } @else if $_screen == to-tablet {
-    @media screen and (max-width: $to-tablet) {
-      @content;
-    }
-  } @else if $_screen == tablet {
-    @media screen and (min-width: $tablet) {
       @content;
     }
   } @else if $_screen == to-desktop {
@@ -32,10 +17,10 @@ screen types:
   }
 }
 
-@mixin font($_fsz, $_lnh) {
-  font-size: #{$_fsz}px;
+// @mixin font($_fsz, $_lnh) {
+//   font-size: #{$_fsz}px;
 
-  $result: math.div($_lnh, $_fsz);
+//   $result: math.div($_lnh, $_fsz);
 
-  line-height: math.div(math.round($result * 100), 100);
-}
+//   line-height: math.div(math.round($result * 100), 100);
+// }

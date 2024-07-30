@@ -1,4 +1,12 @@
-$_main_color: #242424;
-$_main_bg_color: rgba(255, 255, 255, 0.87);
-$_header_color: #747bff;
-$_header_accent_color: red;
+$_main_transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$_white_font_color: #ffffff;
+$_black_font_color: #000000;
+$_main_bg_color: #bfd800;
+$_accent_color: #e14e88;
+
+$_main_font_family: Gluten, sans-serif;
+$_secondary_font_family: Helvetica, sans-serif;
+
+$_main_font_size: 13px;
+$_main_font_weight: 400;
