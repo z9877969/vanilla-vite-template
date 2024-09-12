@@ -1,5 +1,5 @@
 {
-  "name": "vanilla-vite-template",
+  "name": "sailing-match",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -17,12 +17,12 @@
     "sharp": "^0.33.4",
     "svgo": "^3.3.2",
     "vite": "^4.5.2",
+    "vite-plugin-html-inject": "^1.1.2",
     "vite-plugin-image-optimizer": "^1.1.8"
   },
   "author": "Andrii Kyrylenko <z9877969@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "vite-plugin-full-reload": "^1.0.5",
-    "vite-plugin-html-inject": "^1.0.1"
+    "vite-plugin-full-reload": "^1.0.5"
   }
 }
