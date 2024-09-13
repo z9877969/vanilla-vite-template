@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.how-to-play-container {
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+  background-color: #1f8eed;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  position: relative;
+}
+
+.step p {
+  margin: 0;
+  flex: 1;
+}
+
+.number {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
