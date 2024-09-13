@@ -1,18 +1,29 @@
 @import './header.scss';
-@import './vite-promo.scss';
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: EB Garamond, Poppins, sans-serif;
+  font-size: 14 px;
+  line-height: 18.2px;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: $_main_color;
+  background-color: rgba(138, 137, 137, 0.87); //FIXME:
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  max-width: $desktop;
+  margin: 0 auto;
+  padding: 0 215px;
+}
+
+.mob-container {
+  max-width: $mobile;
+  margin: 0 auto;
+  padding: 0 21px;
 }
