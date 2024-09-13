@@ -2,11 +2,15 @@
   padding: 20px 0;
 }
 
+.nav {
+  display: flex;
+}
+
 .nav-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
 
   @include media(tablet) {
     justify-content: flex-start;
@@ -19,8 +23,7 @@
 
 .nav-link {
   font-weight: 500;
-  letter-spacing: 0.02em;
-  @include font(30, 40);
+  @include font(20, 26);
   color: $_header_color;
 }
 
