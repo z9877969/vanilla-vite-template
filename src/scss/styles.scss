@@ -21,4 +21,9 @@
   max-width: $mobile;
   margin: 0 auto;
   padding: 0 21px;
+
+  @include media(desktop) {
+    max-width: $desktop;
+    padding: 0 215px;
+  }
 }
