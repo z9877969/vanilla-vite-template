@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 80px;
+
+  @include media(desktop) {
+    flex-direction: row-reverse;
+    align-items: baseline;
+    gap: 88px;
+    margin-top: 200px;
+  }
+}
+
+.policy-terms-wrap {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    gap: 20px;
+  }
+}
