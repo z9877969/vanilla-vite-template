@@ -22,12 +22,19 @@
 }
 
 .nav-link {
+  font-family: Poppins, sans-serif;
   font-weight: 500;
   @include font(20, 26);
   color: $_header_color;
+  white-space: nowrap;
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: $_header_accent_color;
+}
+
+.logo {
+  margin-left: 75px;
+  margin-right: 75px;
 }
