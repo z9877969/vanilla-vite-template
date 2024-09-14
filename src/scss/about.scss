@@ -1,0 +1,21 @@
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-text {
+  color: #fff;
+  text-align: center;
+  font-family: 'M PLUS 2';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
