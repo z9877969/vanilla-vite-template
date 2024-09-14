@@ -1,0 +1,51 @@
+.logo {
+  img {
+    width: 121px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+}
+
+.intro-section {
+  padding-top: 98px;
+  padding-bottom: 74px;
+  margin-bottom: 53px;
+}
+
+.licence-section {
+  padding-top: 76px;
+  padding-bottom: 75px;
+  margin-bottom: 50px;
+}
+
+.term-section {
+  padding-top: 75px;
+  padding-bottom: 71px;
+  margin-bottom: 50px;
+}
+
+.descr-section {
+    padding-top: 79px;
+    pb
+}
+
+.title {
+  font-family: EB Garamond, sans-serif;
+  font-weight: 600;
+  @include font(40, 52);
+  margin-bottom: 40px;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  @include font(20, 26);
+}
