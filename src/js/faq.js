@@ -1,11 +1,19 @@
 document.querySelectorAll('.toggle-button').forEach(button => {
-  button.addEventListener('click', function () {
-    const faqItem = this.closest('.faq-list-item');
+  button.addEventListener('click', () => {
+    const listItem = button.closest('.faq-list-item');
+    const answer = listItem.querySelector('.faq-answer');
 
-    faqItem.classList.toggle('open');
+    answer.classList.toggle('show');
+    button.classList.toggle('rotated');
 
-    const isExpanded = faqItem.classList.contains('open');
-
-    this.setAttribute('aria-expanded', isExpanded);
+    document.querySelectorAll('.faq-answer.show').forEach(openAnswer => {
+      if (openAnswer !== answer) {
+        openAnswer.classList.remove('show');
+        openAnswer
+          .closest('.faq-list-item')
+          .querySelector('.toggle-button')
+          .classList.remove('rotated');
+      }
+    });
   });
 });
