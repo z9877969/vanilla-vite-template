@@ -1,0 +1,46 @@
+.gallery-section {
+  margin-bottom: 80px;
+}
+
+.gallery-section-header {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.slider {
+  max-width: 332px;
+  //   width: 100%;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.slider-line {
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: transform ease 1s;
+}
+
+img {
+  width: 100%;
+}
+
+.button-block {
+  margin: auto;
+}
+
+.slider-btn {
+  margin: 0 auto;
+  padding: 10px 20px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.btn-prev,
+.btn-next {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
