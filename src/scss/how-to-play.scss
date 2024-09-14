@@ -1,0 +1,60 @@
+.how-to-play {
+  padding-top: 34px;
+  padding-bottom: 77px;
+}
+
+.how-to-play-title {
+  font-family: EB Garamond, sans-serif;
+  font-weight: 600;
+  @include font(40, 52);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.rules-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 182px;
+}
+
+.first-part-rules,
+.second-part-rules {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.second-part-rules {
+  margin-top: 50px;
+}
+
+.rule {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.rule-text {
+  font-family: Poppins, sans-serif;
+  @include font(16, 20.8);
+  font-weight: 400;
+  width: 200px;
+}
+
+.first-part-rules > :nth-child(2),
+.first-part-rules > :nth-child(3) {
+  margin-left: 72px;
+}
+
+.second-part-rules > :first-child,
+.second-part-rules > :last-child {
+  margin-left: 72px;
+}
+
+.rule {
+}
+
+.rule-text {
+}
+
+.rule-img {
+}

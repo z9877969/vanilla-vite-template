@@ -1,0 +1,23 @@
+.hero {
+  padding-top: 133px;
+  padding-bottom: 151px;
+}
+
+.hero-title {
+  font-family: EB Garamond, sans-serif;
+  font-weight: 700;
+  @include font(64, 83.2);
+  margin-bottom: 40px;
+}
+
+.hero-text {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  @include font(22, 28.6);
+  width: 502px;
+  margin-bottom: 60px;
+}
+
+.google-play-img {
+  width: 204px;
+}
