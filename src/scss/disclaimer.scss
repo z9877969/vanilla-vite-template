@@ -1,0 +1,19 @@
+.disclaimer {
+  padding-top: 67px;
+  padding-bottom: 200px;
+}
+
+.disclaimer-title {
+  font-family: EB Garamond, sans-serif;
+  font-weight: 600;
+  @include font(40, 52);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.disclaimer-text {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  @include font(20, 26);
+  text-align: center;
+}

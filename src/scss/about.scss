@@ -1,0 +1,17 @@
+.about {
+  padding-bottom: 88px;
+}
+
+.about-title {
+  font-family: EB Garamond, sans-serif;
+  @include font(40, 52);
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about-text {
+  font-family: Poppins, sans-serif;
+  @include font(20, 28);
+  font-weight: 400;
+}
