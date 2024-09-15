@@ -1,0 +1,29 @@
+.home {
+  margin-bottom: 64px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.main-game-header {
+  color: #fff;
+  text-align: center;
+  font-family: Matemasie;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.google-play-btn {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+}
