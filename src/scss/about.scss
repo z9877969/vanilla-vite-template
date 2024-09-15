@@ -8,6 +8,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-items: center;
+  background-color: #000;
 }
 
 .about-text {
@@ -15,7 +17,11 @@
   text-align: center;
   font-family: 'M PLUS 2';
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   line-height: normal;
+}
+
+.about-screen {
+  background-color: #000;
 }
