@@ -1,0 +1,42 @@
+.benefits {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.benefits-list {
+  max-width: 276px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+}
+
+.benefits-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  padding: 5px;
+  width: 120px;
+}
+
+.benefits-line {
+  width: 120px;
+  background-color: #fff;
+  height: 1px;
+}
+
+.benefits-text {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-family: Matemasie;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  word-break: break-all;
+}
