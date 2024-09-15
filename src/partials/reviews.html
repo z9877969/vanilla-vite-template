@@ -1,36 +1,6 @@
 <section class="reviews" id="reviews">
   <div class="reviews-container"></div>
   <title>reviews</title>
-  <style>
-    .accordion {
-      width: 100%;
-      max-width: 600px;
-      margin: auto;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      overflow: hidden;
-    }
-    .accordion-item {
-      border-bottom: 1px solid #ccc;
-    }
-    .accordion-item:last-child {
-      border-bottom: none;
-    }
-    .accordion-header {
-      background-color: #f1f1f1;
-      padding: 15px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .accordion-content {
-      display: none;
-      padding: 15px;
-      background-color: #fff;
-    }
-    .accordion-content p {
-      margin: 0;
-    }
-  </style>
   <div class="accordion">
     <div class="accordion-item">
       <div class="accordion-header">Emma W.</div>
@@ -69,13 +39,5 @@
       </div>
     </div>
   </div>
-  <script>
-    document.querySelectorAll('.accordion-header').forEach(header => {
-      header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
-        content.style.display =
-          content.style.display === 'block' ? 'none' : 'block';
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </section>
