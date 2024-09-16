@@ -23,6 +23,16 @@
   width: 120px;
 }
 
+.benefits-icon-first {
+  width: 40px;
+  height: 40px;
+}
+
+.benefits-icon-second {
+  width: 60px;
+  height: 40px;
+}
+
 .benefits-line {
   width: 120px;
   background-color: #fff;
@@ -39,4 +49,41 @@
   font-weight: 400;
   line-height: normal;
   word-break: break-all;
+}
+
+@media (min-width: 1440px) {
+  .benefits {
+    margin-bottom: 120px;
+  }
+
+  .benefits-list {
+    width: 100%;
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+
+  .benefits-list-item {
+    width: 260px;
+    padding: 20px 10px;
+    gap: 24px;
+  }
+
+  .benefits-icon-first {
+    width: 64px;
+    height: 64px;
+  }
+
+  .benefits-icon-second {
+    width: 80px;
+    height: 64px;
+  }
+
+  .benefits-line {
+    width: 243px;
+  }
+
+  .benefits-text {
+    font-size: 32px;
+    word-break: normal;
+  }
 }

@@ -1,5 +1,7 @@
 .about {
+  display: flex;
   margin-bottom: 65px;
+  justify-content: center;
 }
 
 .about-list {
@@ -28,4 +30,41 @@
 
 .about-screen {
   background-color: #000;
+}
+
+@media (min-width: 1440px) {
+  .about-list {
+    gap: 0;
+  }
+
+  .about-list-item {
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  .item-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .about-text {
+    width: 750px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .about-screen-first {
+    width: 264px;
+    height: 470px;
+    background-image: url('../img/gallery/about-second.jpg');
+    filter: brightness(0);
+    background-repeat: no-repeat;
+  }
+
+  .about-screen-second {
+    width: 30%;
+    height: 470px;
+    background-image: url('../img/gallery/about-first.jpg');
+    background-repeat: no-repeat;
+  }
 }
