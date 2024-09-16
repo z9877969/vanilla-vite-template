@@ -10,6 +10,7 @@
 }
 
 .main-game-header {
+  width: 267px;
   color: #fff;
   text-align: center;
   font-family: Matemasie;
@@ -26,4 +27,33 @@
   justify-content: center;
   align-items: center;
   padding: 0 5px;
+}
+
+@media (min-width: 1440px) {
+  .home {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 110px;
+    margin-bottom: 80px;
+  }
+
+  .home-container {
+    gap: 48px;
+    width: 668px;
+    align-items: flex-start;
+  }
+
+  .main-game-header {
+    font-size: 80px;
+    align-self: stretch;
+    width: 100%;
+    text-align: left;
+  }
+
+  .background-home-cont {
+    width: 289px;
+    height: 593px;
+    background-image: url('../img/gallery/gallery-third.jpg');
+    box-shadow: 0px 4px 36px 4px rgba(177, 220, 240, 0.2);
+  }
 }

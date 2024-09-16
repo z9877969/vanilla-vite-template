@@ -48,12 +48,13 @@
 }
 
 .close-menu-button {
-  width: 36px;
-  height: 36px;
+  position: fixed;
+  top: 16px;
+  right: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2e2e30;
+  background-color: #000;
 }
 
 .close-menu-icon {
