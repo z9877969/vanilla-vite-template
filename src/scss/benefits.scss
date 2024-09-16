@@ -6,15 +6,23 @@
 .benefits-title {
   font-family: EB Garamond, sans-serif;
   font-weight: 600;
-  @include font(40, 52);
+  @include font(32, 41.6);
   text-align: center;
   margin-bottom: 40px;
+
+  @include media(desktop) {
+    @include font(40, 52);
+  }
 }
 
 .benefits-list {
   display: flex;
-  gap: 80px;
+  gap: 12px;
   justify-content: center;
+
+  @include media(desktop) {
+    gap: 80px;
+  }
 }
 
 .benefit {
@@ -27,6 +35,20 @@
   margin-top: 30px;
   font-family: Poppins, sans-serif;
   font-weight: 400;
-  @include font(22, 28.6);
+  @include font(14, 18.2);
   text-align: center;
+
+  @include media(desktop) {
+    @include font(22, 28.6);
+  }
+}
+
+.benefit-icon {
+  width: 57px;
+  height: 57px;
+
+  @include media(desktop) {
+    width: 63px;
+    height: 63px;
+  }
 }
