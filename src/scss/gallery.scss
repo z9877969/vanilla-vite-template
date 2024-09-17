@@ -1,15 +1,15 @@
 .gallery-section {
   // margin-bottom: 80px;
-  background-image: url(../img/gallery/gallery-bg-mob.png);
-  background-size: 100% 483px;
-  height: 483px;
+  // background-image: url(../img/gallery/gallery-bg-mob.png);
+  // background-size: 100% 483px;
+  // height: 483px;
   padding-top: 40px;
   padding-bottom: 70px;
 
   @include media(desktop) {
-    background-image: url(../img/gallery/gallery-bg.png);
-    background-size: 100% 870px;
-    height: 869px;
+    // background-image: url(../img/gallery/gallery-bg.png);
+    // background-size: 100% 870px;
+    // height: 869px;
     padding-top: 116px;
     padding-bottom: 128px;
   }
