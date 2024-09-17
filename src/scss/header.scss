@@ -10,9 +10,16 @@
 
 .mobile-header-cont {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 212px;
   align-items: center;
   width: 330px;
+}
+
+.game-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
 }
 
 .burger-btn {
@@ -63,17 +70,29 @@
     display: none;
   }
 
+  .game-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+  }
+
   .desktop-header-cont {
     z-index: 55;
     position: fixed;
     top: 5;
     display: flex;
+    align-items: center;
     gap: 83px;
     padding: 15px 20px;
     border-radius: 20px;
     border: 2px solid #fff;
     background: rgba(0, 120, 167, 0.5);
     backdrop-filter: blur(12px);
+  }
+
+  .play-market-logo {
+    width: 48px;
+    height: 53px;
   }
 
   .nav-list-link {

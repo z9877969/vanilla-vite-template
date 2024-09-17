@@ -28,7 +28,7 @@
 }
 
 .gallery-info {
-  max-width: 274px;
+  width: 274px;
   color: #fff;
   text-align: center;
   font-family: 'M PLUS 2';
@@ -48,12 +48,30 @@
     font-size: 60px;
   }
 
+  .gallery-container {
+    gap: 40px;
+  }
+
   .gallery-content-container {
     display: flex;
     gap: 46px;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+  }
+
+  .gallery-item {
+    width: 302px;
+    height: 538px;
+  }
+
+  .gallery-image {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .gallery-images-list {
+    display: flex;
   }
 
   .scroll-container {
@@ -83,7 +101,7 @@
   }
 
   .gallery-info {
-    width: 100%;
+    width: 750px;
     font-size: 24px;
     font-weight: 500;
     text-align: center;
