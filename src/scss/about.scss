@@ -28,8 +28,22 @@
   line-height: normal;
 }
 
-.about-screen {
-  background-color: #000;
+.about-screen-first {
+  width: 118px;
+  height: 211px;
+  transform: rotate(14deg);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-image: url('../img/gallery/about-mobile-pictures/mobile-first-picture.jpg');
+}
+
+.about-screen-second {
+  width: 118px;
+  height: 211px;
+  transform: rotate(-14deg);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-image: url('../img/gallery/about-mobile-pictures/mobile-second-picture.jpg');
 }
 
 @media (min-width: 1440px) {
