@@ -1,10 +1,8 @@
 .hero {
   padding-top: 229px;
-  padding-bottom: 156px;
 
   @include media(desktop) {
-    padding-top: 242px;
-    padding-bottom: 151px;
+    padding-top: 181px;
   }
   // background-image: url(../img/hero/hero-bg.png);
   // background-size: 100% 100%;

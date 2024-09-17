@@ -9,7 +9,6 @@
 @import './terms-page.scss';
 @import './gallery.scss';
 
-
 :root {
   font-family: EB Garamond, Poppins, sans-serif;
   font-size: 14px;
@@ -24,6 +23,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-image: url(../img/main-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -99;
+
+  @include media(desktop) {
+    background-image: url(../img/main-bg.png);
+    background-size: 100%;
+  }
 }
 
 .container {

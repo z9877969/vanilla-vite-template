@@ -1,9 +1,10 @@
 .disclaimer {
-  padding-top: 67px;
-  padding-bottom: 200px;
-  // background-image: url(../img/disclaimer/disclaimer-bg-1.png);
-  // background-size: 100% 100%;
-  // z-index: -99;
+  // padding-top: 67px;
+  // padding-bottom: 200px;
+
+  @include media(desktop) {
+    padding-top: 218px;
+  }
 }
 
 .disclaimer-title {
