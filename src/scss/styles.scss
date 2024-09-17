@@ -19,13 +19,22 @@
   font-weight: 400;
 
   color: $_main_color;
-  background-color: rgba(138, 137, 137, 0.87); //FIXME:
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-image: url(../img/home-bg-mob.png);
+  background-size: cover;
+
+  @include media(desktop) {
+    background-image: url(../img/home-bg.png);
+    background-position: center;
+  }
 }
 
 .container {
