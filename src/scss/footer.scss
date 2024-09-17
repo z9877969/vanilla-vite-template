@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin-top: 80px;
+  padding-bottom: 23px;
+  background: transparent;
 
   @include media(desktop) {
     flex-direction: row-reverse;
     align-items: baseline;
     gap: 88px;
-    margin-top: 200px;
   }
 }
 
