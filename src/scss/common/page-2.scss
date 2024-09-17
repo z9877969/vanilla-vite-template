@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  height: 100px;
+  background-color: black;
+}
+
+.bubbles {
+  background-image: url('path-to-bubbles-image.png'); /* Поставте правильний шлях до бульбашок */
+  height: 100px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.privacy-policy,
+.marketing,
+.data-protection-rights,
+.changes-policy {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+h1,
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.cta-button {
+  margin: 20px 0;
+}
+
+.cta-button .button {
+  background-color: #00aaff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.cta-button .button:hover {
+  background-color: #0088cc;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-button {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.footer-button:hover {
+  background-color: #444;
+}
+
+.footer p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
