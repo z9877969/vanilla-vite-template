@@ -1,3 +1,5 @@
+@import 'normalize-scss/sass/normalize/import-now';
+
 @import './header.scss';
 @import './hero.scss';
 @import './disclaimer.scss';
@@ -8,6 +10,8 @@
 @import './faq.scss';
 @import './terms-page.scss';
 @import './gallery.scss';
+@import './privacy-page.scss';
+
 
 :root {
   font-family: EB Garamond, Poppins, sans-serif;
