@@ -20,7 +20,6 @@
   font-weight: 400;
 
   color: $_main_color;
-  background-color: rgba(138, 137, 137, 0.87); //FIXME:
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,14 +29,12 @@
 }
 
 body {
-  background-image: url(../img/main-bg.png);
-  background-repeat: no-repeat;
+  background-image: url(../img/home-bg-mob.png);
   background-size: cover;
-  z-index: -99;
 
   @include media(desktop) {
-    background-image: url(../img/main-bg.png);
-    background-size: 100%;
+    background-image: url(../img/home-bg.png);
+    background-position: center;
   }
 }
 
