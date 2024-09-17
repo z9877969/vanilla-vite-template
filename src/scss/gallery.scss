@@ -1,5 +1,18 @@
 .gallery-section {
-  margin-bottom: 80px;
+  // margin-bottom: 80px;
+  background-image: url(../img/gallery/gallery-bg-mob.png);
+  background-size: 100% 483px;
+  height: 483px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+
+  @include media(desktop) {
+    background-image: url(../img/gallery/gallery-bg.png);
+    background-size: 100% 870px;
+    height: 869px;
+    padding-top: 116px;
+    padding-bottom: 128px;
+  }
 }
 
 .gallery-section-header {
@@ -12,9 +25,12 @@
   display: flex;
   flex-direction: column;
   max-width: 332px;
-  //   width: 100%;
   overflow: hidden;
   margin: auto;
+
+  @include media(desktop) {
+    max-width: 648px;
+  }
 }
 
 .slider-line {

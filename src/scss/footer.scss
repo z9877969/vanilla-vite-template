@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: end;
   padding-bottom: 23px;
+  background: transparent;
 
   @include media(desktop) {
     flex-direction: row-reverse;
