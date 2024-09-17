@@ -2,11 +2,8 @@
   padding: 20px 0;
   position: fixed;
   width: 100%;
-}
 
-.nav {
-  display: flex;
-  gap: 75px;
+  // background-color: rgb(4, 23, 37);
 }
 
 .nav-list {
@@ -46,8 +43,8 @@
 .desktop-header {
   display: none;
   @include media(desktop) {
-    display: block;
-    background-color: rgb(4, 23, 37);
+    display: flex;
+
   }
 }
 

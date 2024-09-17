@@ -42,13 +42,23 @@
   .desktop-btn {
     display: none;
   }
+
   @include media(desktop) {
     .desktop-btn {
       display: block;
       width: 204px;
     }
+
     .mobile-btn {
       display: none;
     }
   }
+}
+
+.desktop-btn:hover,
+.desktop-btn:focus,
+.mobile-btn:hover,
+.mobile-btn:focus {
+  filter: brightness(0.96);
+  transition: 0.3s;
 }
