@@ -1,9 +1,11 @@
 .header {
   padding: 20px 0;
+  position: fixed;
 }
 
 .nav {
   display: flex;
+  gap: 75px;
 }
 
 .nav-list {
@@ -11,10 +13,6 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-
-  @include media(tablet) {
-    justify-content: flex-start;
-  }
 
   @include media(desktop) {
     justify-content: flex-end;
@@ -39,6 +37,38 @@
   margin-right: 75px;
 
   img {
-    width: 121px;
+    width: 115px;
+    height: 96px;
+    @include media(desktop) {
+      width: 121px;
+    }
   }
+}
+
+.desktop-header {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    background-color: rgb(4, 23, 37);
+  }
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.menu-icon {
+  width: 32.8px;
+  height: 23px;
+  fill: #ffffff;
+}
+
+.mobile-header {
+  display: flex;
+  gap: 60px;
+  align-items: center;
 }
