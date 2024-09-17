@@ -1,17 +1,18 @@
 .body-section {
-  background-image: url(../img/terms-page/main-bg.png);
-  background-position: center;
+  background-image: url(../img/terms-page/main-bg-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -99;
 
   @include media(desktop) {
     background-image: url(../img/terms-page/main-bg.png);
+    background-size: 100% 100%;
   }
 }
 
 .logo-cont {
   display: none;
+
   @include media(desktop) {
     display: block;
   }
@@ -19,89 +20,135 @@
 
 .logo {
   @include media(desktop) {
-    img {
-      width: 121px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 12px;
-      padding-bottom: 10px;
-    }
+    width: 121px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 10px;
   }
 }
 
 .intro-section {
-  padding-top: 98px;
-  padding-bottom: 74px;
-  margin-bottom: 53px;
-  background-position: center;
+  padding-top: 58px;
+  padding-bottom: 43px;
+
+  background-image: url(../img/terms-page/intro-bg-mob.png);
+  background-size: 100% 925px;
+
   background-repeat: no-repeat;
 
   @include media(desktop) {
+    padding-top: 98px;
+    padding-bottom: 74px;
+    margin-bottom: 50px;
+
     background-image: url(../img/terms-page/intro-bg.png);
-    background-size: 1512px 772px;
+    background-size: 100% 772px;
+    background-position: center;
   }
 }
 
 .licence-section {
-  padding-top: 76px;
-  padding-bottom: 75px;
-  margin-bottom: 50px;
+  padding-top: 37px;
+  padding-bottom: 38px;
+  margin-bottom: 15px;
+
+  background-image: url(../img/terms-page/license-bg-mob.png);
+  background-size: 100% 373px;
 
   background-position: center;
   background-repeat: no-repeat;
 
   @include media(desktop) {
+    padding-top: 76px;
+    padding-bottom: 75px;
+    margin-bottom: 50px;
+
     background-image: url(../img/terms-page/license-bg.png);
-    background-size: 1512px 399px;
+    background-size: 100% 399px;
   }
 }
 
 .term-section {
-  padding-top: 75px;
-  padding-bottom: 71px;
-  margin-bottom: 50px;
+  padding-top: 27px;
+  padding-bottom: 36px;
+  margin-bottom: 3px;
 
-  background-image: url(../img/terms-page/terms-bg.png);
-  background-size: 1512px 460px;
+  background-image: url(../img/terms-page/terms-bg-mob.png);
+  background-size: 100% 443px;
+
   background-position: center;
   background-repeat: no-repeat;
+
+  @include media(desktop) {
+    padding-top: 81px;
+    padding-bottom: 71px;
+    margin-bottom: 50px;
+
+    background-image: url(../img/terms-page/terms-bg.png);
+    background-size: 100% 460px;
+  }
 }
 
 .descr-section {
-  padding-top: 79px;
-  padding-bottom: 62px;
-  margin-bottom: 50px;
+  padding-top: 41px;
+  padding-bottom: 42px;
 
-  background-image: url(../img/terms-page/descr-bg.png);
-  background-size: 1512px 363px;
+  background-image: url(../img/terms-page/descr-bg-mob.png);
+  background-size: 100% 363px;
+
   background-position: center;
   background-repeat: no-repeat;
+
+  @include media(desktop) {
+    padding-top: 79px;
+    padding-bottom: 62px;
+    margin-bottom: 50px;
+
+    background-image: url(../img/terms-page/descr-bg.png);
+    background-size: 100% 363px;
+  }
 }
 
 .access-section {
-  padding-top: 88px;
-  padding-bottom: 79px;
-  margin-bottom: 50px;
+  padding-top: 38px;
+  padding-bottom: 33px;
+  margin-bottom: 13px;
 
-  background-image: url(../img/terms-page/access-bg.png);
-  background-size: 1512px 683px;
+  background-image: url(../img/terms-page/access-bg-mob.png);
+  background-size: 100% 753px;
+
   background-position: center;
   background-repeat: no-repeat;
+
+  @include media(desktop) {
+    padding-top: 88px;
+    padding-bottom: 79px;
+    margin-bottom: 50px;
+
+    background-image: url(../img/terms-page/access-bg.png);
+    background-size: 100% 683px;
+  }
 }
 
 .updates-section {
-  padding-top: 71px;
-  padding-bottom: 70px;
+  padding-top: 34px;
+  padding-bottom: 26px;
 
-  background-image: url(../img/terms-page/upd-bg.png);
-  background-size: 1512px 363px;
+  background-image: url(../img/terms-page/upd-bg-mob.png);
+  background-size: 100% 346px;
+
   background-position: center;
   background-repeat: no-repeat;
-}
 
-.footer-section {
-  padding-top: 130px;
-  padding-bottom: 68px;
+  @include media(desktop) {
+    padding-top: 71px;
+    padding-bottom: 70px;
+    margin-bottom: 50px;
+
+    background-image: url(../img/terms-page/upd-bg.png);
+    background-size: 100% 363px;
+  }
 }
 
 .title {
@@ -124,16 +171,41 @@
 .text {
   font-family: Poppins, sans-serif;
   font-weight: 500;
-  @include font(20, 26);
+  @include font(14, 18.2);
+
+  @include media(desktop) {
+    @include font(20, 26);
+  }
+}
+
+.footer-section {
+  padding-top: 54px;
+  padding-bottom: 38px;
+
+  @include media(desktop) {
+    padding-top: 130px;
+    padding-bottom: 68px;
+  }
 }
 
 .footer-container {
   display: flex;
-  gap: 88px;
-  justify-content: end;
+  gap: 16px;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+
+  @include media(desktop) {
+    gap: 88px;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
-.privace-terms-cont {
+.privacy-terms-cont {
   display: flex;
-  gap: 20px;
+  gap: 8px;
+  @include media(desktop) {
+    gap: 20px;
+  }
 }

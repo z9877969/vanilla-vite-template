@@ -1,19 +1,30 @@
 .disclaimer {
   padding-top: 67px;
   padding-bottom: 200px;
+  // background-image: url(../img/disclaimer/disclaimer-bg-1.png);
+  // background-size: 100% 100%;
+  // z-index: -99;
 }
 
 .disclaimer-title {
   font-family: EB Garamond, sans-serif;
   font-weight: 600;
-  @include font(40, 52);
+  @include font(32, 41.6);
   margin-bottom: 40px;
   text-align: center;
+
+  @include media(desktop) {
+    @include font(40, 52);
+  }
 }
 
 .disclaimer-text {
   font-family: Poppins, sans-serif;
   font-weight: 500;
-  @include font(20, 26);
+  @include font(14, 18.2);
   text-align: center;
+
+  @include media(desktop) {
+    @include font(20, 26);
+  }
 }

@@ -1,17 +1,27 @@
-.about {
+.about-section {
   padding-bottom: 88px;
+  // background-image: url(../img/about/about-bg.png);
+  // background-size: 100% 100%;
 }
 
 .about-title {
   font-family: EB Garamond, sans-serif;
-  @include font(40, 52);
+  @include font(32, 41.6);
   font-weight: 600;
   margin-bottom: 40px;
   text-align: center;
+
+  @include media(desktop) {
+    @include font(40, 52);
+  }
 }
 
 .about-text {
   font-family: Poppins, sans-serif;
-  @include font(20, 28);
+  @include font(14, 19.6);
   font-weight: 400;
+
+  @include media(desktop) {
+    @include font(20, 28);
+  }
 }
