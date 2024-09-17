@@ -1,5 +1,10 @@
 .home {
   margin-bottom: 64px;
+  background-image: url('../img/gallery/home-background/home-picture.png');
+  background-repeat: no-repeat;
+  background-position-x: 1058px;
+  border-radius: 20px;
+  position: relative;
 }
 
 .home-container {
@@ -59,6 +64,18 @@
   line-height: normal;
 }
 
+.home-blur {
+  position: absolute;
+  width: 138px;
+  height: 119px;
+  background-color: rgba(177, 220, 240, 0.2);
+  filter: blur(60px);
+  border-radius: 50%;
+  flex-shrink: 0;
+  top: 142px;
+  right: -39px;
+}
+
 .background-home-cont {
   display: none;
 }
@@ -77,6 +94,16 @@
     gap: 48px;
     width: 668px;
     align-items: flex-start;
+  }
+
+  .home-blur {
+    width: 473px;
+    height: 409px;
+    border-radius: 473px;
+    background: rgba(177, 220, 240, 0.2);
+    filter: blur(60px);
+    right: -109px;
+    top: 264px;
   }
 
   .google-play-link {
