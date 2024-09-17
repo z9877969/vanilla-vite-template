@@ -20,13 +20,43 @@
   line-height: normal;
 }
 
-.google-play-btn {
-  background-color: #fff;
-  border-radius: 8px;
+.google-play-link {
   display: flex;
+  padding: 12px 20px;
   justify-content: center;
   align-items: center;
-  padding: 0 5px;
+  gap: 12px;
+  border-radius: 10px;
+  border: 1.5px solid #000;
+  background: #fff;
+}
+
+.play-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.play-market-logo {
+  width: 43px;
+  height: 48px;
+}
+
+.google-play-info {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.google-play-add-info {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .background-home-cont {
@@ -49,6 +79,23 @@
     align-items: flex-start;
   }
 
+  .google-play-link {
+    gap: 16px;
+  }
+
+  .play-market-logo {
+    width: 53px;
+    height: 58px;
+  }
+
+  .google-play-info {
+    font-size: 20px;
+  }
+
+  .google-play-add-info {
+    font-size: 32px;
+  }
+
   .main-game-header {
     font-size: 80px;
     align-self: stretch;
@@ -57,16 +104,16 @@
   }
 
   .background-home-cont {
+    display: block;
     width: 289px;
     height: 593px;
-    // background-image: url('../img/gallery/home-background/home-picture.jpg');
-    box-shadow: 0px 4px 36px 4px rgba(177, 220, 240, 0.2);
     background-repeat: no-repeat;
     border-radius: 20px;
   }
 
   .image {
-    width: 286px;
+    width: 276px;
+    height: 583px;
     border-radius: 20px;
   }
 }
