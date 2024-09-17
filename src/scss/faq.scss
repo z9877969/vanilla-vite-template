@@ -1,10 +1,18 @@
+.faq-section {
+  margin-bottom: 80px;
+
+  @include media(desktop) {
+    margin-bottom: 200px;
+  }
+}
+
 .faq-section-header {
   font-size: 32px;
   text-align: center;
   margin-bottom: 40px;
 }
 
-.button {
+.faq-button {
   background: transparent;
   border: none;
   width: 22px;
@@ -16,9 +24,10 @@
   }
 }
 
-.icon {
-  fill: #ffd253;
-}
+// .arrow-icon {
+//   width: 22px;
+
+// }
 
 .faq-list {
   display: flex;

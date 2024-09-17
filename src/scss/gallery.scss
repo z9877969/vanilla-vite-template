@@ -9,11 +9,12 @@
 }
 
 .slider {
+  display: flex;
+  flex-direction: column;
   max-width: 332px;
   //   width: 100%;
   overflow: hidden;
   margin: auto;
-  margin-bottom: 20px;
 }
 
 .slider-line {
@@ -21,6 +22,7 @@
   position: relative;
   left: 0;
   transition: transform ease 1s;
+  margin-bottom: 20px;
 }
 
 img {
@@ -32,15 +34,12 @@ img {
 }
 
 .slider-btn {
-  margin: 0 auto;
-  padding: 10px 20px;
-  margin: auto;
-  cursor: pointer;
+  width: 80px;
+  background: transparent;
+  border: none;
 }
 
-.btn-prev,
-.btn-next {
-  padding: 10px 20px;
-  margin: 0 10px;
-  cursor: pointer;
+.slider-btn:hover {
+  filter: brightness(0.96);
+  transition: 0.3s;
 }
