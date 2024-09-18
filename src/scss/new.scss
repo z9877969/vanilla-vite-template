@@ -1,33 +1,142 @@
-section {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.how-to-play-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 67px;
 }
 
 .section-title {
-  font-size: 2rem;
-  font-weight: bold;
+  color: #fff;
   text-align: center;
-  margin: 20px 0;
+  font-family: Matemasie;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-// Steps Section
-.steps-container {
+.steps-list {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 20px;
+  align-items: center;
+  gap: 16px;
 }
 
 .step-item {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
+  padding: 5px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
 }
 
 .step-number {
-  font-weight: bold;
-  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.first-elem {
+  border-radius: 40px;
+  border: 1px solid #fff;
+  background: rgba(245, 176, 52, 0.5);
+}
+
+.one {
+  border-radius: 40px;
+  background: var(
+    --Yellow,
+    radial-gradient(50% 50% at 50% 50%, #fff 0%, #f5b034 100%)
+  );
+}
+
+.second-elem {
+  border-radius: 40px;
+  border: 1px solid #fff;
+  background: rgba(223, 0, 26, 0.5);
+}
+
+.two {
+  border-radius: 40px;
+  background: var(
+    --Red,
+    radial-gradient(50% 50% at 50% 50%, #fff 0%, #df001a 100%)
+  );
+}
+
+.third-elem {
+  border-radius: 40px;
+  border: 1px solid #fff;
+  background: rgba(228, 81, 30, 0.5);
+}
+
+.three {
+  border-radius: 40px;
+  background: var(
+    --Orange,
+    radial-gradient(50% 50% at 50% 50%, #fff 0%, #e4511e 100%)
+  );
+}
+
+.fourth-elem {
+  border-radius: 40px;
+  border: 1px solid #fff;
+  background: rgba(55, 166, 217, 0.5);
+}
+
+.four {
+  border-radius: 40px;
+  background: var(
+    --Blue,
+    radial-gradient(50% 50% at 50% 50%, #fff 0%, #37a6d9 100%)
+  );
+}
+
+.fifth-elem {
+  border-radius: 40px;
+  border: 1px solid #fff;
+  background: rgba(54, 166, 98, 0.5);
+}
+
+.five {
+  border-radius: 40px;
+  background: var(
+    --Green,
+    radial-gradient(50% 50% at 50% 50%, #fff 0%, #36a662 100%)
+  );
+}
+
+.sixth-elem {
+  border-radius: 40px;
+  border: 1px solid #fff;
+  background: rgba(128, 53, 134, 0.5);
+}
+
+.six {
+  border-radius: 40px;
+  background: var(
+    --Purpple,
+    radial-gradient(50% 50% at 50% 50%, #fff 0%, #803586 100%)
+  );
+}
+
+.step-text {
+  width: 226px;
+  color: #fff;
+  text-align: center;
+  font-family: 'M PLUS 2';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 // Reviews Section
@@ -112,21 +221,34 @@ section {
   color: #333;
 }
 
-
-
-// Responsive design for mobile devices
-@media (max-width: 768px) {
-  .step-item,
-  .accordion-header,
-  .question-title {
-    font-size: 1rem;
+@media (min-width: 1440px) {
+  .how-to-play-section {
+    gap: 34px;
+    margin-bottom: 120px;
   }
 
-  .reviews-nav {
-    font-size: 1.5rem;
+  .section-title {
+    font-size: 60px;
   }
 
-  .answer-content {
-    font-size: 0.9rem;
+  .steps-list {
+    gap: 40px;
+  }
+
+  .step-item {
+    border: 2px solid #fff;
+    padding: 10px;
+    gap: 32px;
+  }
+
+  .step-number {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+  }
+
+  .step-text {
+    width: 632px;
+    font-size: 24px;
   }
 }
