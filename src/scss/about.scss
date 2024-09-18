@@ -2,6 +2,7 @@
   display: flex;
   margin-bottom: 65px;
   justify-content: center;
+  position: relative;
 }
 
 .about-list {
@@ -19,6 +20,7 @@
 }
 
 .about-text {
+  width: 274px;
   color: #fff;
   text-align: center;
   font-family: 'M PLUS 2';
@@ -26,6 +28,25 @@
   font-weight: 400;
   font-style: normal;
   line-height: normal;
+}
+
+.about-blur {
+  position: absolute;
+  width: 138px;
+  height: 119px;
+  background-color: rgba(177, 220, 240, 0.2);
+  filter: blur(60px);
+  flex-shrink: 0;
+}
+
+.first {
+  top: 82px;
+  left: -52px;
+}
+
+.second {
+  bottom: 174px;
+  right: 37px;
 }
 
 .about-screen-first {
@@ -58,6 +79,18 @@
 
   .item-reverse {
     flex-direction: row-reverse;
+  }
+
+  .first {
+    width: 473px;
+    height: 409px;
+    border-radius: 473px;
+    top: -56px;
+    left: -132px;
+  }
+
+  .second {
+    display: none;
   }
 
   .about-text {

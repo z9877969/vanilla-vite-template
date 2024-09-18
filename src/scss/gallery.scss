@@ -25,6 +25,15 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  position: relative;
+}
+
+.gallery-blur {
+  position: absolute;
+  width: 229px;
+  height: 76px;
+  background-color: rgba(177, 220, 240, 0.2);
+  filter: blur(60px);
 }
 
 .gallery-info {
@@ -50,6 +59,11 @@
 
   .gallery-container {
     gap: 40px;
+  }
+
+  .gallery-blur {
+    width: 929px;
+    height: 126px;
   }
 
   .gallery-content-container {
