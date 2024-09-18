@@ -1,8 +1,5 @@
 .home {
   margin-bottom: 64px;
-  background-image: url('../img/gallery/home-background/home-picture.png');
-  background-repeat: no-repeat;
-  background-position-x: 1058px;
   border-radius: 20px;
   position: relative;
 }
@@ -131,7 +128,8 @@
   }
 
   .background-home-cont {
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 289px;
     height: 593px;
     background-repeat: no-repeat;
