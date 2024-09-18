@@ -23,15 +23,22 @@
   z-index: -999;
   background-repeat: no-repeat;
 
+  background-image: url(../img/gallery/gallery-bg-mob.png);
+  height: 483px;
+  top: 1935px;
+  background-size: 100% 483px;
+
   @include media(desktop) {
-    top: 1470px;
-    height: 869px;
-    background-size: 100% 869px;
     background-image: url(../img/gallery/gallery-bg.png);
+    height: 869px;
+    top: 1470px;
+    background-size: 100% 869px;
   }
 }
 
 .gallery-container {
+  margin-top: 61px;
+
   @include media(desktop) {
     margin-top: 151px;
   }

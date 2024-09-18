@@ -30,10 +30,13 @@
 
 body {
   background-color: #919191;
-  background-image: url(../img/hero/hero-dark-bg.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: top;
+  background-image: url(../img/hero/hero-dark-bg-mob.jpg);
+
+  @include media(desktop) {
+    background-image: url(../img/hero/hero-dark-bg.jpg);
+  }
 }
 
 // body {

@@ -1,15 +1,16 @@
 .hero {
-  // background-image: url(../img/hero/hero-dark-bg.jpg);
-  // background-size: 100%;
-  // background-position: top;
 }
 
 .hero-background {
-  background-image: url(../img/hero/hero-light-bg.png);
-  background-size: 100% 663px;
-  background-position: top;
+  background-image: url(../img/hero/hero-light-bg-mob.png);
+  background-size: 100% 610px;
+  margin-top: 94px;
+  padding-top: 135px;
+  padding-bottom: 162px;
 
   @include media(desktop) {
+    background-image: url(../img/hero/hero-light-bg.png);
+    background-size: 100% 663px;
     margin-top: 105px;
     padding-top: 90px;
     padding-bottom: 145px;

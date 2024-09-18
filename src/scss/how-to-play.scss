@@ -7,29 +7,49 @@
 .how-to-play-dark-bg {
   position: absolute;
   width: 100%;
-  height: 313px;
-  top: 431px;
   left: 0;
   z-index: -99999;
-  background-image: url(../img/how-to-play/how-to-play-dark-bg.jpg);
-  background-size: 100% 313px;
   background-repeat: no-repeat;
+
+  background-image: url(../img/how-to-play/how-to-play-dark-bg-mob.jpg);
+  height: 195px;
+  top: 650px;
+  background-size: 100% 195px;
+
+  @include media(desktop) {
+    background-image: url(../img/how-to-play/how-to-play-dark-bg.jpg);
+    height: 313px;
+    top: 431px;
+    background-size: 100% 313px;
+  }
 }
 
 .how-to-play-background {
   position: absolute;
   width: 100%;
-  height: 952px;
-  top: 95px;
   left: 0;
   z-index: -9999;
-  background-image: url(../img/how-to-play/how-to-play-bg.png);
-  background-size: 100% 952px;
   background-repeat: no-repeat;
+
+  background-image: url(../img/how-to-play/how-to-play-bg-mob.png);
+  height: 1294px;
+  top: 79px;
+  background-size: 100% 1294px;
+
+  @include media(desktop) {
+    background-image: url(../img/how-to-play/how-to-play-bg.png);
+    height: 952px;
+    top: 95px;
+    background-size: 100% 952px;
+  }
 }
 
 .how-to-play-container {
+  margin-top: 21px;
+  
+  @include media(desktop) {
   margin-top: 106px;
+  }
 }
 
 .how-to-play-title {
