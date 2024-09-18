@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -99;
+  padding-top: 33px;
 
   @include media(desktop) {
     background-image: url(../img/terms-page/main-bg.png);
@@ -11,20 +12,71 @@
 }
 
 .logo-cont {
-  display: none;
+  padding: 0;
 
   @include media(desktop) {
-    display: block;
+    padding: 20px 0 40px 0;
   }
 }
 
 .logo {
+  display: none;
+
   @include media(desktop) {
-    width: 121px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 12px;
-    padding-bottom: 10px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.header-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  text-wrap: nowrap;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  filter: brightness(0.85);
+}
+
+.arrow-back-icon {
+  rotate: 90deg;
+  width: 22px;
+
+  @include media(desktop) {
+    width: 35px;
+  }
+}
+
+.back-text {
+  font-family: 'EB Garamond';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  background: $_yellow_gradient_color;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include media(desktop) {
+    font-size: 20px;
   }
 }
 
@@ -141,10 +193,12 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  margin-bottom: 54px;
+
   @include media(desktop) {
     padding-top: 71px;
     padding-bottom: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 130px;
 
     background-image: url(../img/terms-page/upd-bg.png);
     background-size: 100% 363px;
@@ -175,37 +229,5 @@
 
   @include media(desktop) {
     @include font(20, 26);
-  }
-}
-
-.footer-section {
-  padding-top: 54px;
-  padding-bottom: 38px;
-
-  @include media(desktop) {
-    padding-top: 130px;
-    padding-bottom: 68px;
-  }
-}
-
-.footer-container {
-  display: flex;
-  gap: 16px;
-  align-items: flex-end;
-  flex-direction: column-reverse;
-
-  @include media(desktop) {
-    gap: 88px;
-    justify-content: end;
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-.privacy-terms-cont {
-  display: flex;
-  gap: 8px;
-  @include media(desktop) {
-    gap: 20px;
   }
 }

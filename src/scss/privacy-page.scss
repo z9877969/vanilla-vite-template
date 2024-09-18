@@ -28,7 +28,7 @@
     transform: translateX(-50%);
 
     img {
-      width: 121px;
+      width: 100%;
     }
   }
 }
@@ -48,6 +48,11 @@
   border: none;
   color: white;
   text-wrap: nowrap;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  filter: brightness(0.85);
 }
 
 .arrow-back-icon {
