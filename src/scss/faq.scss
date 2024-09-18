@@ -1,5 +1,6 @@
 .faq-section {
   margin-bottom: 80px;
+
   position: relative;
   // background-image: url(../img/faq/faq-bg-mob.png);
   // background-size: 100%;
@@ -7,7 +8,6 @@
 
   @include media(desktop) {
     margin-bottom: 200px;
-    // background-image: url(../img/faq/faq-bg.png);
     padding-top: 180px;
   }
 }
@@ -43,6 +43,7 @@
   background: transparent;
   border: none;
   width: 29px;
+  transition: 0.3s;
 
   @include media(desktop) {
     width: 35px;
@@ -50,8 +51,7 @@
 }
 
 .faq-button:hover {
-  filter: brightness(0.96);
-  transition: 0.3s;
+  filter: brightness(0.85);
 }
 
 .faq-list {
