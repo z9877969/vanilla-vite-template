@@ -1,5 +1,6 @@
 .faq-section {
   margin-bottom: 80px;
+  position: relative;
   // background-image: url(../img/faq/faq-bg-mob.png);
   // background-size: 100%;
   // height: 100%;
@@ -8,6 +9,27 @@
     margin-bottom: 200px;
     // background-image: url(../img/faq/faq-bg.png);
     padding-top: 180px;
+  }
+}
+
+.faq-background {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: -9999;
+  background-repeat: no-repeat;
+
+  @include media(desktop) {
+    top: 1988px;
+    height: 964px;
+    background-size: 100% 964px;
+    background-image: url(../img/faq/faq-bg.png);
+  }
+}
+
+.faq-container {
+  @include media(desktop) {
+    margin-top: 216px;
   }
 }
 

@@ -1,7 +1,24 @@
 .about-section {
   padding-bottom: 88px;
+  position: relative;
   // background-image: url(../img/about/about-bg.png);
   // background-size: 100% 100%;
+}
+
+.about-background {
+  position: absolute;
+  width: 100%;
+  height: 555px;
+  top: 25px;
+  left: 0;
+  z-index: -9999;
+  background-image: url(../img/about/about-bg.png);
+  background-size: 100% 555px;
+  background-repeat: no-repeat;
+}
+
+.about-container {
+  margin-top: 160px;
 }
 
 .about-title {

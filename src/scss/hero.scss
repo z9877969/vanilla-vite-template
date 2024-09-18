@@ -1,11 +1,19 @@
 .hero {
-  padding-top: 229px;
+  // background-image: url(../img/hero/hero-dark-bg.jpg);
+  // background-size: 100%;
+  // background-position: top;
+}
+
+.hero-background {
+  background-image: url(../img/hero/hero-light-bg.png);
+  background-size: 100% 663px;
+  background-position: top;
 
   @include media(desktop) {
-    padding-top: 181px;
+    margin-top: 105px;
+    padding-top: 90px;
+    padding-bottom: 145px;
   }
-  // background-image: url(../img/hero/hero-bg.png);
-  // background-size: 100% 100%;
 }
 
 .hero-title {

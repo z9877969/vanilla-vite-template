@@ -12,7 +12,6 @@
 @import './gallery.scss';
 @import './privacy-page.scss';
 
-
 :root {
   font-family: EB Garamond, Poppins, sans-serif;
   font-size: 14px;
@@ -29,14 +28,22 @@
 }
 
 body {
-  background-image: url(../img/home-bg-mob.png);
-  background-size: cover;
-
-  @include media(desktop) {
-    background-image: url(../img/home-bg.png);
-    background-position: center;
-  }
+  background-color: #919191;
+  background-image: url(../img/hero/hero-dark-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
 }
+
+// body {
+//   background-image: url(../img/home-bg-mob.png);
+//   background-size: 1440px 4629px;
+
+//   @include media(desktop) {
+//     background-image: url(../img/home-bg.png);
+//     background-position: top;
+//   }
+// }
 
 .container {
   max-width: $mobile;

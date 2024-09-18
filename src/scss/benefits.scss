@@ -1,6 +1,23 @@
 .benefits {
   padding-top: 123px;
   padding-bottom: 84px;
+  position: relative;
+}
+
+.benefits-background {
+  position: absolute;
+  width: 100%;
+  height: 573px;
+  top: 1266px;
+  left: 0;
+  z-index: -9999;
+  background-image: url(../img/benefits/benefits-bg.png);
+  background-size: 100% 573px;
+  background-repeat: no-repeat;
+}
+
+.benefits-container {
+  margin-top: 123px;
 }
 
 .benefits-title {

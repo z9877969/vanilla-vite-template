@@ -5,6 +5,7 @@
   // height: 483px;
   padding-top: 40px;
   padding-bottom: 70px;
+  position: relative;
 
   @include media(desktop) {
     // background-image: url(../img/gallery/gallery-bg.png);
@@ -12,6 +13,27 @@
     // height: 869px;
     padding-top: 116px;
     padding-bottom: 128px;
+  }
+}
+
+.gallery-background {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: -999;
+  background-repeat: no-repeat;
+
+  @include media(desktop) {
+    top: 1470px;
+    height: 869px;
+    background-size: 100% 869px;
+    background-image: url(../img/gallery/gallery-bg.png);
+  }
+}
+
+.gallery-container {
+  @include media(desktop) {
+    margin-top: 151px;
   }
 }
 
