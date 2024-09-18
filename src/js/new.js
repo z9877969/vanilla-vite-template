@@ -1,52 +1,52 @@
-/// відгук
-const accordionHeaders = document.querySelectorAll('.accordion-header');
-accordionHeaders.forEach(header => {
-  header.addEventListener('click', () => {
-    const content = header.nextElementSibling;
-    const icon = header.querySelector('.toggle');
-
-    content.style.maxHeight
-      ? (content.style.maxHeight = null)
-      : (content.style.maxHeight = content.scrollHeight + 'px');
-
-    icon.textContent === '+'
-      ? (icon.textContent = '-')
-      : (icon.textContent = '+');
+document.addEventListener('DOMContentLoaded', function () {
+  // Toggle accordion content
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', function () {
+      const content = this.nextElementSibling;
+      content.style.display =
+        content.style.display === 'block' ? 'none' : 'block';
+    });
   });
-});
 
-// питання
-const questionTitles = document.querySelectorAll('.question-title');
-questionTitles.forEach(title => {
-  title.addEventListener('click', () => {
-    const answer = title.nextElementSibling;
-    const icon = title.querySelector('.toggle');
-
-    answer.style.maxHeight
-      ? (answer.style.maxHeight = null)
-      : (answer.style.maxHeight = answer.scrollHeight + 'px');
-
-    icon.textContent === '+'
-      ? (icon.textContent = '-')
-      : (icon.textContent = '-');
+  // Toggle question answers
+  const questionTitles = document.querySelectorAll('.question-title');
+  questionTitles.forEach(title => {
+    title.addEventListener('click', function () {
+      const content = this.nextElementSibling;
+      const toggle = this.querySelector('.toggle');
+      content.style.display =
+        content.style.display === 'block' ? 'none' : 'block';
+      toggle.textContent = toggle.textContent === '+' ? '-' : '+';
+    });
   });
-});
 
-// Горизонт. прокрут. відгук.
-const reviewsContainer = document.querySelector('.reviews-container');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
+  // Reviews navigation
+  const prevButton = document.querySelector('.reviews-nav.prev');
+  const nextButton = document.querySelector('.reviews-nav.next');
+  const reviews = document.querySelectorAll(
+    '.reviews-container .accordion-item'
+  );
 
-prevButton.addEventListener('click', () => {
-  reviewsContainer.scrollBy({
-    left: -reviewsContainer.clientWidth,
-    behavior: 'smooth',
+  let currentReviewIndex = 0;
+
+  function showReview(index) {
+    reviews.forEach((review, i) => {
+      review.style.display = i === index ? 'block' : 'none';
+    });
+  }
+
+  prevButton.addEventListener('click', function () {
+    currentReviewIndex =
+      (currentReviewIndex - 1 + reviews.length) % reviews.length;
+    showReview(currentReviewIndex);
   });
-});
 
-nextButton.addEventListener('click', () => {
-  reviewsContainer.scrollBy({
-    left: reviewsContainer.clientWidth,
-    behavior: 'smooth',
+  nextButton.addEventListener('click', function () {
+    currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+    showReview(currentReviewIndex);
   });
+
+  // Show first review initially
+  showReview(currentReviewIndex);
 });
