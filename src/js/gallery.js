@@ -1,21 +1,18 @@
-const galleryList = document.querySelector('.gallery-images-list');
-
-const scrollLeft = document.querySelector('.left');
-
-const scrollRight = document.querySelector('.right');
-
-let currentElem = 0;
-
-function handleScrollLeft() {
-  currentElem = (currentElem - 1 + galleryItems.length) % galleryItems.length;
-  updateGallery();
-}
-
-function handleScrollRight() {
-  currentElem = (currentElem + 1) % galleryItems.length;
-  updateGallery();
-}
-
-scrollLeft.addEventListener('click', handleScrollLeft);
-
-scrollRight.addEventListener('click', handleScrollRight);
+const swiper = new Swiper('.mySwiper', {
+  slidesPerView: 1, // Показувати одну картинку
+  spaceBetween: 0, // Відстань між слайдами
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    // На вьюпорті менше 1440px показувати всі слайди
+    1440: {
+      slidesPerView: 1, // Показувати одну картинку
+    },
+    0: {
+      slidesPerView: 'auto', // Для менших екранів показувати кілька
+      spaceBetween: 20, // Відстань між слайдами
+    },
+  },
+});

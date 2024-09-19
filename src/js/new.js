@@ -1,3 +1,30 @@
+const scrollLeft = document.querySelector('.left');
+const scrollRight = document.querySelector('.right');
+const reviewsList = document.querySelector('.accordion-list');
+const items = document.querySelectorAll('.accordion-item');
+
+const itemWidth = items[0].offsetWidth + 24;
+let scrollPosition = 0;
+
+scrollLeft.addEventListener('click', () => {
+  scrollPosition = Math.max(scrollPosition - itemWidth, 0);
+  reviewsList.scrollTo({
+    left: scrollPosition,
+    behavior: 'smooth',
+  });
+});
+
+scrollRight.addEventListener('click', () => {
+  scrollPosition = Math.min(
+    scrollPosition + itemWidth,
+    reviewsList.scrollWidth - reviewsList.clientWidth
+  );
+  reviewsList.scrollTo({
+    left: scrollPosition,
+    behavior: 'smooth',
+  });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   // Toggle accordion content
   const accordionHeaders = document.querySelectorAll('.accordion-header');
@@ -21,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Reviews navigation
+  // // Reviews navigation
   // const prevButton = document.querySelector('.reviews-nav.prev');
   // const nextButton = document.querySelector('.reviews-nav.next');
   // const reviews = document.querySelectorAll(
