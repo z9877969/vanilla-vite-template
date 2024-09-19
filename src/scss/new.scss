@@ -147,15 +147,14 @@
 }
 
 .reviews-container {
-  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .accordion-list {
-  padding-left: 20px;
-  padding-bottom: 20px;
   display: flex;
   gap: 24px;
   overflow-x: auto;
@@ -171,6 +170,10 @@
   line-height: normal;
 }
 
+.scroll-container {
+  display: none;
+}
+
 .accordion-item {
   display: flex;
   flex-direction: column;
@@ -178,6 +181,7 @@
   padding: 10px;
   border-radius: 20px;
   border: 1px solid #fff;
+  width: 244px;
 }
 
 .accordion-line {
@@ -333,8 +337,58 @@
     margin-bottom: 120px;
   }
 
+  .reviews-section {
+    margin-bottom: 60px;
+  }
+
+  .reviews-container {
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .accordion-list {
+    overflow-x: hidden;
+    width: 1272px;
+    transition: scroll 0.3s ease;
+  }
+
+  .accordion-item {
+    width: 300px;
+  }
+
+  .reviews-header {
+    font-size: 60px;
+  }
+
   .section-title {
     font-size: 60px;
+  }
+
+  .accordion-header {
+    width: 280px;
+    font-size: 32px;
+  }
+
+  .accordion-content {
+    width: 280px;
+    font-size: 24px;
+  }
+
+  .scroll-container {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+  }
+
+  .scroll {
+    width: 64px;
+    height: 64px;
+  }
+
+  .arrow-icon {
+    width: 29px;
+    height: 16px;
   }
 
   .steps-list {
