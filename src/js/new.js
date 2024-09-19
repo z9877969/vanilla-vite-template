@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     header.addEventListener('click', function () {
       const content = this.nextElementSibling;
       content.style.display =
-        content.style.display === 'block' ? 'none' : 'block';
+        content.style.display === 'flex' ? 'none' : 'flex';
     });
   });
 
@@ -16,25 +16,25 @@ document.addEventListener('DOMContentLoaded', function () {
       const content = this.nextElementSibling;
       const toggle = this.querySelector('.toggle');
       content.style.display =
-        content.style.display === 'block' ? 'none' : 'block';
+        content.style.display === 'flex' ? 'none' : 'flex';
       toggle.textContent = toggle.textContent === '+' ? '-' : '+';
     });
   });
 
   // Reviews navigation
-  const prevButton = document.querySelector('.reviews-nav.prev');
-  const nextButton = document.querySelector('.reviews-nav.next');
-  const reviews = document.querySelectorAll(
-    '.reviews-container .accordion-item'
-  );
+  // const prevButton = document.querySelector('.reviews-nav.prev');
+  // const nextButton = document.querySelector('.reviews-nav.next');
+  // const reviews = document.querySelectorAll(
+  //   '.reviews-container .accordion-item'
+  // );
 
-  let currentReviewIndex = 0;
+  // let currentReviewIndex = 0;
 
-  function showReview(index) {
-    reviews.forEach((review, i) => {
-      review.style.display = i === index ? 'block' : 'none';
-    });
-  }
+  // function showReview(index) {
+  //   reviews.forEach((review, i) => {
+  //     review.style.display = i === index ? 'flex' : 'none';
+  //   });
+  // }
 
   prevButton.addEventListener('click', function () {
     currentReviewIndex =

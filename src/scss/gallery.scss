@@ -28,6 +28,10 @@
   position: relative;
 }
 
+.gallery-images-list {
+  overflow-x: auto;
+}
+
 .gallery-blur {
   position: absolute;
   width: 229px;
