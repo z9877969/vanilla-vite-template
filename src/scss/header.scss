@@ -2,10 +2,10 @@
   padding-top: 10px;
   padding-left: 0;
   padding-right: 0;
-  margin-bottom: 119px;
   min-width: 320px;
   display: flex;
   justify-content: center;
+  position: fixed;
 }
 
 .mobile-header-cont {
@@ -104,5 +104,11 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    transition: color 0.3s ease, font-weight 0.5s ease;
+  }
+
+  .nav-list-link:hover {
+    color: #ffe000;
+    font-weight: 800;
   }
 }

@@ -14,11 +14,11 @@ const galleryItems = [
   'gallery-fifth',
 ];
 
-function updateGallery() {
-  galleryList.innerHTML = `<li class="gallery-item">
-  <img class="gallery-image" src="./img/gallery/${galleryItems[currentElem]}.jpg"/>
-  </li>`;
-}
+// function updateGallery() {
+//   galleryList.innerHTML = `<li class="gallery-item">
+//   <img class="gallery-image" src="./img/gallery/${galleryItems[currentElem]}.jpg"/>
+//   </li>`;
+// }
 
 function handleScrollLeft() {
   currentElem = (currentElem - 1 + galleryItems.length) % galleryItems.length;

@@ -9,12 +9,24 @@
   align-items: center;
 }
 
-.gallery-content-container {
+.scroll {
   display: none;
 }
 
-.scroll-container {
-  display: none;
+.gallery-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.gallery-images-item {
+  width: 248px;
+  height: 440px;
+}
+
+.image-picture {
+  border-radius: 20px;
 }
 
 .gallery-header {
@@ -30,6 +42,8 @@
 
 .gallery-images-list {
   overflow-x: auto;
+  display: flex;
+  gap: 24px;
 }
 
 .gallery-blur {
