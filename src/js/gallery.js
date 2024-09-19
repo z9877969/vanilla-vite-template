@@ -1,18 +1,19 @@
+import Swiper from 'swiper';
+
 const swiper = new Swiper('.mySwiper', {
-  slidesPerView: 1, // Показувати одну картинку
-  spaceBetween: 0, // Відстань між слайдами
+  slidesPerView: 1,
+  spaceBetween: 0,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    // На вьюпорті менше 1440px показувати всі слайди
     1440: {
-      slidesPerView: 1, // Показувати одну картинку
+      slidesPerView: 1,
     },
     0: {
-      slidesPerView: 'auto', // Для менших екранів показувати кілька
-      spaceBetween: 20, // Відстань між слайдами
+      slidesPerView: 'auto',
+      spaceBetween: 20,
     },
   },
 });
