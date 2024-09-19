@@ -20,6 +20,7 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  overflow-x: auto;
 }
 
 .step-item {
@@ -140,23 +141,69 @@
 }
 
 // Reviews Section
+
+.reviews-section {
+  margin-bottom: 40px;
+}
+
 .reviews-container {
-  margin: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordion-list {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+}
+
+.reviews-header {
+  color: #fff;
+  text-align: center;
+  font-family: Matemasie;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .accordion-item {
-  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+}
+
+.accordion-line {
+  width: 183px;
+  height: 0.5px;
+  background: #fff;
 }
 
 .accordion-header {
-  font-weight: bold;
-  cursor: pointer;
+  width: 207px;
+  color: #fff;
+  font-family: 'M PLUS 2';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .accordion-content {
-  display: none;
-  font-size: 1rem;
-  margin-top: 5px;
+  width: 224px;
+  color: #fff;
+  font-family: 'M PLUS 2';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .reviews-nav {
@@ -168,26 +215,55 @@
 
 // Questions Section
 .questions-section {
-  margin: 20px;
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
 }
 
 .question-item {
-  margin-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 280px;
+  border-top: 0.5px solid #fff;
+  border-bottom: 0.5px solid #fff;
 }
 
 .question-title {
-  font-weight: bold;
   display: flex;
+  gap: 12px;
+  font-weight: bold;
   justify-content: space-between;
   cursor: pointer;
 }
 
+.question {
+  width: 244px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: 'M PLUS 2';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .answer-content {
   display: none;
-  margin-top: 5px;
-  font-size: 1rem;
-  padding-left: 10px;
-  border-left: 3px solid #ccc;
+  width: 280px;
+  color: #fff;
+  font-family: 'M PLUS 2';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .toggle {
@@ -199,8 +275,43 @@
 }
 
 // Disclaimer Section
+
+.disclaimer-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 66px;
+  border-radius: 40px;
+  border: 1px solid #fff;
+}
+
 .disclaimer-container {
-  margin: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.disclaimer-header {
+  color: #fff;
+  text-align: center;
+  font-family: Matemasie;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.disclaimer-text {
+  width: 278px;
+  height: 118px;
+  color: #fff;
+  text-align: center;
+  font-family: 'M PLUS 2';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .bubbles {
@@ -214,11 +325,6 @@
   background-color: #f2f2f2;
   border-radius: 50%;
   margin: 5px;
-}
-
-.disclaimer-content p {
-  font-size: 1rem;
-  color: #333;
 }
 
 @media (min-width: 1440px) {
@@ -250,5 +356,19 @@
   .step-text {
     width: 632px;
     font-size: 24px;
+  }
+
+  .disclaimer-section {
+    padding: 20px;
+  }
+
+  .disclaimer-header {
+    font-size: 60px;
+  }
+
+  .disclaimer-text {
+    width: 933px;
+    font-size: 24px;
+    height: auto;
   }
 }

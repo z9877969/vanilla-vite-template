@@ -1,39 +1,275 @@
-.header {
-  height: 100px;
-  background-color: black;
+.header-second-page {
+  margin-bottom: 58px;
+  background-color: #000;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.game-logo-second {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
 }
 
 .bubbles {
-  background-image: url('path-to-bubbles-image.png'); /* Поставте правильний шлях до бульбашок */
+  background-image: url('path-to-bubbles-image.png');
   height: 100px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.privacy-policy,
-.marketing,
-.data-protection-rights,
-.changes-policy {
-  border: 2px solid #fff;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0;
+.second-main {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.cta-button {
-  margin: 20px 0;
+.privacy-policy-section {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  margin-bottom: 64px;
 }
 
-.cta-button .button {
-  background-color: #00aaff;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
+.privacy-policy-header {
+  width: 256px;
+  height: 47px;
+  color: #fff;
+  text-align: center;
+  font-family: Matemasie;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
 }
 
-.cta-button .button:hover {
-  background-color: #0088cc;
+.privacy-policy-blur {
+  position: absolute;
+  display: none;
+}
+
+.privacy-policy-text {
+  width: 260px;
+  color: #fff;
+  text-align: center;
+  font-family: 'M PLUS 2';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.marketing-section {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.marketing-header {
+  color: #fff;
+  text-align: left;
+  font-family: Matemasie;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.marketing-text {
+  color: #fff;
+  font-family: 'M PLUS 2';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.data-protection-section {
+  margin-bottom: 41px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.data-protection-header {
+  width: 280px;
+  color: #fff;
+  font-family: Matemasie;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.data-protection-text-list {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.data-protection-text {
+  width: 280px;
+  color: #fff;
+  font-family: 'M PLUS 2';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.changes-policy-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 64px;
+}
+
+.changes-policy-header {
+  width: 280px;
+  color: #fff;
+  font-family: Matemasie;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.changes-policy-text {
+  width: 280px;
+  color: #fff;
+  font-family: 'M PLUS 2';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home-page-link-container {
+  margin-bottom: 64px;
+}
+
+.back-to-home-link {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid #00a1ff;
+  color: #fff;
+  font-family: 'M PLUS 2';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.back-to-home-link:hover {
+  background: #00a1ff;
+}
+
+@media (min-width: 1440px) {
+  .second-main {
+    padding-left: 84px;
+    padding-right: 84px;
+  }
+
+  .privacy-policy-section {
+    border: none;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .privacy-policy-blur {
+    display: block;
+    width: 929px;
+    height: 126px;
+    flex-shrink: 0;
+    border-radius: 929px;
+    background: rgba(177, 220, 240, 0.2);
+    filter: blur(60px);
+  }
+
+  .privacy-policy-header {
+    width: auto;
+    height: auto;
+    font-size: 80px;
+  }
+
+  .privacy-policy-text {
+    width: auto;
+    font-size: 24px;
+  }
+
+  .marketing-section {
+    gap: 22px;
+    flex-direction: row;
+    margin-bottom: 64px;
+  }
+
+  .marketing-header {
+    width: 516px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .marketing-text {
+    width: 734px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .data-protection-section {
+    gap: 22px;
+    flex-direction: row;
+    margin-bottom: 64px;
+  }
+
+  .data-protection-header {
+    width: 516px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .data-protection-text {
+    width: 734px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .home-page-link-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+  }
+
+  .back-to-home-link {
+    padding: 20px 100px;
+    font-size: 24px;
+  }
+
+  .changes-policy-section {
+    margin-bottom: 120px;
+    flex-direction: row;
+    gap: 22px;
+  }
+
+  .changes-policy-header {
+    width: 516px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .changes-policy-text {
+    width: 734px;
+    height: 101px;
+    font-size: 24px;
+    font-weight: 500;
+  }
 }
