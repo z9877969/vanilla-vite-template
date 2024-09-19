@@ -63,17 +63,17 @@ document.addEventListener('DOMContentLoaded', function () {
   //   });
   // }
 
-  prevButton.addEventListener('click', function () {
-    currentReviewIndex =
-      (currentReviewIndex - 1 + reviews.length) % reviews.length;
-    showReview(currentReviewIndex);
-  });
+  // prevButton.addEventListener('click', function () {
+  //   currentReviewIndex =
+  //     (currentReviewIndex - 1 + reviews.length) % reviews.length;
+  //   showReview(currentReviewIndex);
+  // });
 
-  nextButton.addEventListener('click', function () {
-    currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
-    showReview(currentReviewIndex);
-  });
+  // nextButton.addEventListener('click', function () {
+  //   currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+  //   showReview(currentReviewIndex);
+  // });
 
   // Show first review initially
-  showReview(currentReviewIndex);
-});
+//   showReview(currentReviewIndex);
+// })
