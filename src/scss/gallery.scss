@@ -34,6 +34,11 @@
   display: none;
 }
 
+.right:hover,
+.left:hover {
+  background: #00a1ff;
+}
+
 .gallery-text {
   width: 274px;
   color: #fff;

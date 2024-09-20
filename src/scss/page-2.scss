@@ -1,9 +1,13 @@
 .header-second-page {
-  margin-bottom: 58px;
   background-color: #000;
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
+  background-image: url('../img/bubbles/Decor\ for\ header\ 1.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 200px;
+  padding-top: 105px;
 }
 
 .game-logo-second {
@@ -13,7 +17,7 @@
 }
 
 .bubbles {
-  background-image: url('path-to-bubbles-image.png');
+  background-image: url('');
   height: 100px;
   background-position: center;
   background-size: contain;
@@ -36,7 +40,6 @@
   border-radius: 20px;
   border: 1px solid #fff;
   margin-bottom: 64px;
-  margin-top: 205px;
 }
 
 .privacy-policy-header {
@@ -178,6 +181,12 @@
 }
 
 @media (min-width: 1440px) {
+  .header-second-page {
+    background-image: url('../img/bubbles/Decor\ for\ header\ desktop\ 1.svg');
+    height: 288px;
+    padding-bottom: 0;
+  }
+
   .second-main {
     padding-left: 84px;
     padding-right: 84px;
@@ -187,7 +196,10 @@
     border: none;
     gap: 40px;
     align-items: center;
-    margin-top: 294px;
+  }
+
+  .game-logo-second {
+    display: none;
   }
 
   .privacy-policy-blur {
