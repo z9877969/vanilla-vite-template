@@ -11,7 +11,9 @@
   background-image: url('../img/bubbles/Decor\ for\ header\ 1.svg');
   background-repeat: no-repeat;
   height: 130px;
-  margin: 0 auto;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .bubbles-cont {
