@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+.gallery-container {
+  width: 274px;
+}
+
 .gallery-header {
   color: #fff;
   text-align: center;
@@ -89,8 +93,14 @@
 }
 
 @media (min-width: 1440px) {
+  .gallery {
+    scroll-margin-top: 180px;
+  }
+
   .gallery-container {
+    margin: 0 auto;
     gap: 40px;
+    width: 1272px;
   }
 
   .gallery-header {
