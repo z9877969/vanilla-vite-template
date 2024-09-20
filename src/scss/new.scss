@@ -224,6 +224,12 @@
   background-color: transparent;
 }
 
+.right-reviews:disabled,
+.left-reviews:disabled {
+  background-color: #df001a;
+  cursor: not-allowed;
+}
+
 // Questions Section
 .questions-section {
   margin-bottom: 90px;

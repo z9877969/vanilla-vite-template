@@ -3,23 +3,52 @@ const scrollLeftReviews = document.querySelector('.left-reviews');
 const scrollRightReviews = document.querySelector('.right-reviews');
 
 const itemWidth = document.querySelector('.accordion-item').offsetWidth;
-
 const gap = 24;
-const scrollAmount = itemWidth + gap * 2;
+const scrollAmount = itemWidth + gap * 1.5;
 
-scrollRightReviews.addEventListener('click', () => {
-  reviewsList.scrollBy({
-    left: scrollAmount,
-    behavior: 'smooth',
+function handleButtonScroll() {
+  scrollRightReviews.addEventListener('click', () => {
+    reviewsList.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth',
+    });
   });
-});
 
-scrollLeftReviews.addEventListener('click', () => {
-  reviewsList.scrollBy({
-    left: -scrollAmount,
-    behavior: 'smooth',
+  scrollLeftReviews.addEventListener('click', () => {
+    reviewsList.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth',
+    });
   });
-});
+}
+
+function handleTouchScroll() {
+  let startX;
+  let scrollLeft;
+
+  reviewsList.addEventListener('touchstart', e => {
+    startX = e.touches[0].pageX;
+    scrollLeft = reviewsList.scrollLeft;
+  });
+
+  reviewsList.addEventListener('touchmove', e => {
+    const x = e.touches[0].pageX;
+    const walk = (x - startX) * 2;
+    reviewsList.scrollLeft = scrollLeft - walk;
+  });
+}
+
+function initScrollHandler() {
+  if (window.innerWidth <= 1440) {
+    handleTouchScroll();
+  } else {
+    handleButtonScroll();
+  }
+}
+
+initScrollHandler();
+
+window.addEventListener('resize', initScrollHandler);
 
 const questionItems = document.querySelectorAll('.question-item');
 
