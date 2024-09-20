@@ -69,8 +69,16 @@
     align-items: flex-end;
   }
 
+  .footer-link-container:hover {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
   .footer-link {
     font-size: 24px;
+  }
+
+  .footer-link-container:hover {
+    transform: scale(1.1);
   }
 
   .footer-link-icon {

@@ -565,6 +565,10 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
+  .left-reviews:disabled {
+    background-color: #df001a;
+  }
+
   .arrow-icon {
     width: 29px;
     height: 16px;
