@@ -1,0 +1,39 @@
+<svg width="261" height="255" viewBox="0 0 261 255" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_613_287)">
+<path d="M111 168C138.614 168 161 145.614 161 118C161 90.3858 138.614 68 111 68C83.3858 68 61 90.3858 61 118C61 145.614 83.3858 168 111 168Z" fill="url(#paint0_radial_613_287)"/>
+<path d="M61 255C88.6142 255 111 232.614 111 205C111 177.386 88.6142 155 61 155C33.3858 155 11 177.386 11 205C11 232.614 33.3858 255 61 255Z" fill="url(#paint1_radial_613_287)"/>
+<path d="M192 50.0002C192 77.6145 169.615 100 142 100C114.386 100 92 77.6145 92 50.0002C92 22.386 114.386 0 142 0C169.615 0 192 22.386 192 50.0002Z" fill="url(#paint2_radial_613_287)"/>
+<path d="M211 100C238.614 100 261 77.6142 261 50C261 22.3858 238.614 0 211 0C183.386 0 161 22.3858 161 50C161 77.6142 183.386 100 211 100Z" fill="url(#paint3_radial_613_287)"/>
+<path d="M50 185C77.6142 185 100 162.614 100 135C100 107.386 77.6142 85 50 85C22.3858 85 0 107.386 0 135C0 162.614 22.3858 185 50 185Z" fill="url(#paint4_radial_613_287)"/>
+<path d="M100 65C100 92.6141 77.6146 115 50.0005 115C22.3859 115 0 92.6146 0 65C0 37.3854 22.3859 15 50.0005 15C77.6146 15 100 37.3859 100 65Z" fill="url(#paint5_radial_613_287)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_613_287" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(111 118) scale(50.0003)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#F5B034"/>
+</radialGradient>
+<radialGradient id="paint1_radial_613_287" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60.9999 205) scale(49.9999)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#803586"/>
+</radialGradient>
+<radialGradient id="paint2_radial_613_287" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(142 50.0001) scale(49.9999)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#E4511E"/>
+</radialGradient>
+<radialGradient id="paint3_radial_613_287" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(211 49.9997) scale(49.9999)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#DF001A"/>
+</radialGradient>
+<radialGradient id="paint4_radial_613_287" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(49.9997 135) scale(49.9997)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#36A662"/>
+</radialGradient>
+<radialGradient id="paint5_radial_613_287" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50.0003 65.0002) scale(49.9999 50.0001)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#37A6D9"/>
+</radialGradient>
+<clipPath id="clip0_613_287">
+<rect width="261" height="255" fill="white"/>
+</clipPath>
+</defs>
+</svg>
