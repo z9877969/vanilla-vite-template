@@ -99,10 +99,12 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .back-to-home-link:hover {
   background-color: #0088cc;
+  transform: scale(1.1);
 }
 
 @media (min-width: 1440px) {

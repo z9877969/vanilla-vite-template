@@ -6,12 +6,31 @@ const itemWidth = document.querySelector('.accordion-item').offsetWidth;
 const gap = 24;
 const scrollAmount = itemWidth + gap * 1.5;
 
+function checkScrollPosition() {
+  const scrollLeft = reviewsList.scrollLeft;
+  const scrollWidth = reviewsList.scrollWidth;
+  const clientWidth = reviewsList.clientWidth;
+
+  if (scrollLeft === 0) {
+    scrollLeftReviews.setAttribute('disabled', 'true');
+  } else {
+    scrollLeftReviews.removeAttribute('disabled');
+  }
+
+  if (scrollLeft + clientWidth >= scrollWidth) {
+    scrollRightReviews.setAttribute('disabled', 'true');
+  } else {
+    scrollRightReviews.removeAttribute('disabled');
+  }
+}
+
 function handleButtonScroll() {
   scrollRightReviews.addEventListener('click', () => {
     reviewsList.scrollBy({
       left: scrollAmount,
       behavior: 'smooth',
     });
+    setTimeout(checkScrollPosition, 300);
   });
 
   scrollLeftReviews.addEventListener('click', () => {
@@ -19,8 +38,14 @@ function handleButtonScroll() {
       left: -scrollAmount,
       behavior: 'smooth',
     });
+    setTimeout(checkScrollPosition, 300);
   });
 }
+
+reviewsList.addEventListener('scroll', checkScrollPosition);
+
+handleButtonScroll();
+checkScrollPosition();
 
 function handleTouchScroll() {
   let startX;
