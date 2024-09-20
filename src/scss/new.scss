@@ -210,11 +210,23 @@
   line-height: normal;
 }
 
-.reviews-nav {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
+.scroll-container-reviews {
+  display: flex;
+  gap: 64px;
+}
+
+.scroll-reviews {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 2px solid #00a1ff;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
 }
 
 // Questions Section
@@ -281,19 +293,21 @@
 // Disclaimer Section
 
 .disclaimer-section {
-  padding-top: 20px;
-  padding-bottom: 20px;
   margin-bottom: 66px;
-  border-radius: 40px;
-  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
 }
 
 .disclaimer-container {
-  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
   display: flex;
   flex-direction: column;
   gap: 32px;
   align-items: center;
+  border-radius: 40px;
+  border: 1px solid #fff;
 }
 
 .disclaimer-header {
@@ -335,6 +349,23 @@
   .how-to-play-section {
     gap: 34px;
     margin-bottom: 120px;
+  }
+
+  .steps-list .step-item:nth-child(1),
+  .step-item:nth-child(5) {
+    margin-left: 0;
+  }
+
+  .steps-list .step-item:nth-child(2),
+  .step-item:nth-child(4),
+  .step-item:nth-child(6),
+  .step-item:nth-child(8) {
+    margin-left: 180px;
+  }
+
+  .steps-list .step-item:nth-child(3),
+  .step-item:nth-child(7) {
+    margin-left: 360px;
   }
 
   .reviews-section {
@@ -412,8 +443,9 @@
     font-size: 24px;
   }
 
-  .disclaimer-section {
+  .disclaimer-container {
     padding: 20px;
+    width: 1272px;
   }
 
   .disclaimer-header {
