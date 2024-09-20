@@ -305,15 +305,28 @@
   line-height: normal;
 }
 
-.plus-icon {
+.question-button {
   width: 24px;
   height: 24px;
-  stroke: #fff;
-  fill: #fff;
-  color: #fff;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+}
+
+.plus-icon {
+  stroke: #fff;
+  fill: #fff;
+  height: 24px;
+}
+
+.plus-icon {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(45deg);
 }
 
 // Disclaimer Section
@@ -573,6 +586,16 @@
   .questions-list {
     width: 1272px;
     gap: 40px;
+  }
+
+  .question-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .cross-icon,
+  .plus-icon {
+    height: 36px;
   }
 
   .question-item {
