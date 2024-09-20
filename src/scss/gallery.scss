@@ -8,6 +8,7 @@
 
 .gallery-container {
   width: 274px;
+  margin: 0 auto;
 }
 
 .gallery-header {
@@ -41,6 +42,12 @@
 .right:hover,
 .left:hover {
   background: #00a1ff;
+}
+
+.right:disabled,
+.left:disabled {
+  background-color: #df001a;
+  cursor: not-allowed;
 }
 
 .gallery-text {
@@ -98,7 +105,6 @@
   }
 
   .gallery-container {
-    margin: 0 auto;
     gap: 40px;
     width: 1272px;
   }
