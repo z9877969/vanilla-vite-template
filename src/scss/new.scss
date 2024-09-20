@@ -349,13 +349,13 @@
 }
 
 .disclaimer-container::before {
-  background-image: url('../img/bubbles/disclaimer/Decor for disclaimer 2 1.svg');
+  background-image: url('../img/bubbles/disclaimer/Decor\ for\ disclaimer\ 2\ desktop.svg ');
   top: -30px;
   left: -30px;
 }
 
 .disclaimer-container::after {
-  background-image: url('../img/bubbles/disclaimer/Decor for disclaimer 1.svg');
+  background-image: url('../img/bubbles/disclaimer/Decor\ for\ discleimer\ 1\ desktop.svg ');
   bottom: -30px;
   right: -30px;
 }
@@ -523,18 +523,6 @@
     background-position: center;
     width: 261px;
     height: 255px;
-  }
-
-  .disclaimer-container::before {
-    background-image: url('../img/bubbles/disclaimer/Decor\ for\ disclaimer\ 2\ desktop.svg ');
-    top: 0;
-    left: 0;
-  }
-
-  .disclaimer-container::after {
-    background-image: url('../img/bubbles/disclaimer/Decor\ for\ discleimer\ 1\ desktop.svg ');
-    bottom: 0;
-    right: 0;
   }
 
   .disclaimer-container {
