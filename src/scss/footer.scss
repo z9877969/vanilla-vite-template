@@ -1,15 +1,16 @@
 .footer {
-  padding: 20px;
   border-top: 2px solid #fff;
   background: #0e0e0e;
 }
 
 .footer-content {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .footer-links {
@@ -57,11 +58,13 @@
 
 @media (min-width: 1440px) {
   .footer {
-    padding: 20px 84px;
   }
 
   .footer-content {
+    padding: 20px 84px;
     gap: 32px;
+    width: 1440px;
+    margin: 0 auto;
   }
 
   .footer-links {

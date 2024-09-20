@@ -412,6 +412,7 @@
   .how-to-play-section {
     gap: 34px;
     margin-bottom: 120px;
+    scroll-margin-top: 180px;
   }
 
   .steps-list .step-item:nth-child(1),
@@ -433,6 +434,7 @@
 
   .reviews-section {
     margin-bottom: 60px;
+    scroll-margin-top: 180px;
   }
 
   .reviews-container {
@@ -496,6 +498,9 @@
 
   .steps-list {
     gap: 40px;
+    width: 1130px;
+    align-items: flex-start;
+    margin: 0 auto;
   }
 
   .step-item {
@@ -564,6 +569,7 @@
   .questions-section {
     margin-bottom: 127px;
     align-items: center;
+    scroll-margin-top: 180px;
   }
 
   .questions-title {
