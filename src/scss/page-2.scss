@@ -8,6 +8,8 @@
   background-position: top;
   height: 200px;
   padding-top: 105px;
+  margin: 0 auto;
+  width: 280px;
 }
 
 .game-logo-second {
@@ -72,10 +74,14 @@
 }
 
 .marketing-section {
+  margin-bottom: 24px;
+}
+
+.marketing-container {
   display: flex;
   gap: 16px;
   flex-direction: column;
-  margin-bottom: 24px;
+  width: 280px;
 }
 
 .marketing-header {
@@ -187,6 +193,7 @@
     background-image: url('../img/bubbles/Decor\ for\ header\ desktop\ 1.svg');
     height: 288px;
     padding-bottom: 0;
+    width: 100%;
   }
 
   .second-main {
@@ -226,9 +233,15 @@
   }
 
   .marketing-section {
+    margin-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .marketing-container {
     gap: 22px;
     flex-direction: row;
-    margin-bottom: 64px;
+    width: 1272px;
   }
 
   .marketing-header {
