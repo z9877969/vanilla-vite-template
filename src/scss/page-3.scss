@@ -9,13 +9,18 @@
 }
 
 .introduction-section {
-  padding: 10px;
+  margin-bottom: 64px;
+}
+
+.introduction-container {
+  border-radius: 20px;
+  border: 1px solid #fff;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  border-radius: 20px;
-  border: 1px solid #fff;
-  margin-bottom: 64px;
+  padding: 10px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .introduction-header {
@@ -45,8 +50,12 @@
   margin-bottom: 24px;
 }
 
-.welcome-content {
+.welcome-container {
   width: 280px;
+  margin: 0 auto;
+}
+
+.welcome-content {
   color: #fff;
   font-family: 'M PLUS 2';
   font-size: 12px;
@@ -56,10 +65,15 @@
 }
 
 .service-section {
+  margin-bottom: 24px;
+}
+
+.service-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 24px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .service-section:last-of-type {
@@ -117,11 +131,15 @@
   }
 
   .introduction-section {
-    width: 1272px;
-    padding: 20px;
-    border-radius: 40px;
-    gap: 32px;
     align-items: center;
+  }
+
+  .introduction-container {
+    gap: 32px;
+    border-radius: 40px;
+    width: 1272px;
+    gap: 32px;
+    padding: 20px;
   }
 
   .introduction-header {
@@ -151,16 +169,23 @@
     margin-bottom: 64px;
   }
 
-  .welcome-content {
+  .welcome-container {
     width: 1272px;
+  }
+
+  .welcome-content {
     font-size: 24px;
     font-weight: 400;
   }
 
   .service-section {
+    margin-bottom: 64px;
+  }
+
+  .service-container {
     flex-direction: row;
     gap: 22px;
-    margin-bottom: 64px;
+    width: 1272px;
   }
 
   .service-header {
