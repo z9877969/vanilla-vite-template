@@ -1,4 +1,5 @@
 .about {
+  scroll-margin-top: 180px;
   display: flex;
   margin-bottom: 65px;
   justify-content: center;
@@ -70,7 +71,6 @@
 @media (min-width: 1440px) {
   .about {
     margin-bottom: 164px;
-    scroll-margin-top: 180px;
   }
 
   .about-list {
