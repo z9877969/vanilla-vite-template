@@ -6,6 +6,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  scroll-margin-top: 180px;
 }
 
 .gallery-container {
@@ -102,10 +103,6 @@
 }
 
 @media (min-width: 1440px) {
-  .gallery {
-    scroll-margin-top: 180px;
-  }
-
   .gallery-container {
     gap: 40px;
     width: 1272px;

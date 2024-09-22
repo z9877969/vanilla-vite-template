@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 16px;
   margin-bottom: 67px;
+  scroll-margin-top: 180px;
 }
 
 .section-title {
@@ -144,6 +145,7 @@
 
 .reviews-section {
   margin-bottom: 40px;
+  scroll-margin-top: 180px;
 }
 
 .reviews-container {
@@ -236,6 +238,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  scroll-margin-top: 180px;
 }
 
 .questions-title {
@@ -420,7 +423,6 @@
   .how-to-play-section {
     gap: 34px;
     margin-bottom: 120px;
-    scroll-margin-top: 180px;
   }
 
   .steps-list .step-item:nth-child(1),
@@ -442,7 +444,6 @@
 
   .reviews-section {
     margin-bottom: 60px;
-    scroll-margin-top: 180px;
   }
 
   .reviews-container {
@@ -581,7 +582,6 @@
   .questions-section {
     margin-bottom: 127px;
     align-items: center;
-    scroll-margin-top: 180px;
   }
 
   .questions-title {
