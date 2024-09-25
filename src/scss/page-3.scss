@@ -140,9 +140,9 @@
   .introduction-container {
     gap: 32px;
     border-radius: 40px;
-    width: 1272px;
+    width: 1280px;
     gap: 32px;
-    padding: 20px;
+    padding: 20px 16px;
   }
 
   .introduction-header {
@@ -158,9 +158,9 @@
   }
 
   .introduction-text {
+    text-align: center;
     width: 1166px;
     color: #fff;
-    text-align: center;
     font-family: 'M PLUS 2';
     font-size: 24px;
     font-style: normal;
@@ -173,12 +173,14 @@
   }
 
   .welcome-container {
-    width: 1272px;
+    width: 1280px;
+    padding: 0 16px;
   }
 
   .welcome-content {
     font-size: 24px;
     font-weight: 400;
+    width: 1272px;
   }
 
   .service-section {
@@ -188,7 +190,8 @@
   .service-container {
     flex-direction: row;
     gap: 22px;
-    width: 1272px;
+    width: 1280px;
+    padding: 0 16px;
   }
 
   .service-header {
