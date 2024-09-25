@@ -35,13 +35,17 @@
 }
 
 .privacy-policy-section {
+  margin-bottom: 64px;
+}
+
+.privacy-policy-container {
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   border-radius: 20px;
   border: 1px solid #fff;
-  margin-bottom: 64px;
+  margin: 0 auto;
 }
 
 .privacy-policy-header {
@@ -105,9 +109,13 @@
 
 .data-protection-section {
   margin-bottom: 41px;
+}
+
+.data-protection-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin: 0 auto;
 }
 
 .data-protection-header {
@@ -137,10 +145,13 @@
 }
 
 .changes-policy-section {
+  margin-bottom: 64px;
+}
+
+.changes-policy-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 64px;
 }
 
 .changes-policy-header {
@@ -193,7 +204,9 @@
     background-image: url('../img/bubbles/Decor\ for\ header\ desktop\ 1.svg');
     height: 288px;
     padding-bottom: 0;
-    width: 100%;
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .second-main {
@@ -201,10 +214,13 @@
     padding-right: 84px;
   }
 
-  .privacy-policy-section {
+  .privacy-policy-container {
     border: none;
     gap: 40px;
     align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 1280px;
   }
 
   .game-logo-second {
@@ -234,14 +250,15 @@
 
   .marketing-section {
     margin-bottom: 64px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .marketing-container {
+    margin-left: auto;
+    margin-right: auto;
     gap: 22px;
     flex-direction: row;
-    width: 1272px;
+    width: 1280px;
+    padding: 0 16px;
   }
 
   .marketing-header {
@@ -257,9 +274,14 @@
   }
 
   .data-protection-section {
+    margin-bottom: 64px;
+  }
+
+  .data-protection-container {
     gap: 22px;
     flex-direction: row;
-    margin-bottom: 64px;
+    padding: 0 16px;
+    width: 1280px;
   }
 
   .data-protection-header {
@@ -289,8 +311,13 @@
 
   .changes-policy-section {
     margin-bottom: 120px;
+  }
+
+  .changes-policy-container {
     flex-direction: row;
     gap: 22px;
+    padding: 0 16px;
+    width: 1280px;
   }
 
   .changes-policy-header {
