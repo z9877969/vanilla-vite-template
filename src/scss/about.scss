@@ -6,6 +6,10 @@
   position: relative;
 }
 
+.about-container {
+  margin: 0 auto;
+}
+
 .about-list {
   display: flex;
   flex-direction: column;
@@ -68,9 +72,14 @@
   background-image: url('../img/gallery/about-mobile-pictures/mobile-second-picture.jpg');
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .about {
     margin-bottom: 164px;
+  }
+
+  .about-container {
+    width: 1280px;
+    padding: 0 16px;
   }
 
   .about-list {

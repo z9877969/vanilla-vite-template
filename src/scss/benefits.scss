@@ -5,8 +5,12 @@
   margin-bottom: 40px;
 }
 
-.benefits-list {
+.benefits-container {
   width: 276px;
+  margin: 0 auto;
+}
+
+.benefits-list {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
@@ -52,13 +56,17 @@
   word-break: break-all;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .benefits {
     margin-bottom: 120px;
   }
 
+  .benefits-container {
+    width: 1280px;
+    padding: 0 16px;
+  }
+
   .benefits-list {
-    width: 1272px;
     gap: 24px;
     flex-wrap: nowrap;
   }

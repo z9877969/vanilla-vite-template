@@ -81,7 +81,7 @@
   color: $_header_accent_color;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .header {
     padding: 50px;
     background-image: url('../img/bubbles/Decor\ for\ header\ desktop\ 1.svg');
@@ -90,7 +90,7 @@
     justify-content: center;
     background-position: center;
     position: fixed;
-    width: 100%;
+    width: 1280px;
     background-color: transparent;
   }
 
@@ -107,11 +107,10 @@
   .desktop-header-cont {
     z-index: 55;
     position: fixed;
-    top: 5;
     display: flex;
     align-items: center;
     gap: 83px;
-    padding: 15px 20px;
+    padding: 15px 16px;
     border-radius: 20px;
     border: 2px solid #fff;
     background: rgba(0, 120, 167, 0.5);

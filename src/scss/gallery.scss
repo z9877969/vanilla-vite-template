@@ -1,15 +1,14 @@
 .gallery {
   margin-bottom: 85px;
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   scroll-margin-top: 180px;
 }
 
 .gallery-container {
+  padding-left: 20px;
+  padding-right: 20px;
   width: 274px;
   margin: 0 auto;
 }
@@ -54,7 +53,6 @@
 }
 
 .gallery-text {
-  width: 274px;
   color: #fff;
   text-align: center;
   font-family: 'M PLUS 2';
@@ -102,10 +100,11 @@
   border-radius: 20px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .gallery-container {
     gap: 40px;
-    width: 1272px;
+    width: 1280px;
+    padding: 0 16px;
   }
 
   .gallery-header {
