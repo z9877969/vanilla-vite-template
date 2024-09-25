@@ -1,9 +1,13 @@
 .how-to-play-section {
+  margin-bottom: 67px;
+  scroll-margin-top: 180px;
+}
+
+.how-to-play-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 67px;
-  scroll-margin-top: 180px;
+  margin: 0 auto;
 }
 
 .section-title {
@@ -235,10 +239,14 @@
 // Questions Section
 .questions-section {
   margin-bottom: 90px;
+  scroll-margin-top: 180px;
+}
+
+.questions-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  scroll-margin-top: 180px;
+  width: 100%;
 }
 
 .questions-title {
@@ -344,9 +352,22 @@
 
 .disclaimer-section {
   margin-bottom: 66px;
+  background-repeat: no-repeat;
+}
+
+.disclaimer-container {
   display: flex;
   justify-content: center;
-  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  border-radius: 40px;
+  border: 1px solid #fff;
 }
 
 .disclaimer-container::before,
@@ -369,19 +390,6 @@
   background-image: url('../img/bubbles/disclaimer/Decor\ for\ discleimer\ 1\ desktop.svg');
   bottom: -30px;
   right: -30px;
-}
-
-.disclaimer-container {
-  position: relative;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 280px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: center;
-  border-radius: 40px;
-  border: 1px solid #fff;
 }
 
 .disclaimer-header {
@@ -419,10 +427,14 @@
   margin: 5px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .how-to-play-section {
-    gap: 34px;
     margin-bottom: 120px;
+  }
+
+  .how-to-play-container {
+    gap: 34px;
+    padding: 0 16px;
   }
 
   .steps-list .step-item:nth-child(1),
@@ -450,11 +462,14 @@
     gap: 40px;
     justify-content: center;
     align-items: center;
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .accordion-list {
     overflow-x: hidden;
-    width: 1272px;
+    width: 100%;
     transition: scroll 0.3s ease;
   }
 
@@ -529,6 +544,11 @@
     font-size: 24px;
   }
 
+  .disclaimer-container {
+    padding: 20px 16px;
+    width: 1280px;
+  }
+
   .disclaimer-container::before,
   .disclaimer-container::after {
     content: '';
@@ -537,11 +557,6 @@
     background-position: center;
     width: 261px;
     height: 255px;
-  }
-
-  .disclaimer-container {
-    padding: 20px;
-    width: 1272px;
   }
 
   .disclaimer-header {
@@ -581,7 +596,12 @@
 
   .questions-section {
     margin-bottom: 127px;
+  }
+
+  .questions-container {
     align-items: center;
+    padding: 0 16px;
+    width: 1280px;
   }
 
   .questions-title {
