@@ -38,8 +38,12 @@
   line-height: normal;
 }
 
-.introduction-text {
+.introduction-text-container {
+  margin: 0 auto;
   width: 260px;
+}
+
+.introduction-text {
   color: #fff;
   text-align: center;
   font-family: 'M PLUS 2';
@@ -157,9 +161,13 @@
     line-height: normal;
   }
 
-  .introduction-text {
-    text-align: center;
+  .introduction-text-container {
     width: 1166px;
+  }
+
+  .introduction-text {
+    width: 100%;
+    text-align: center;
     color: #fff;
     font-family: 'M PLUS 2';
     font-size: 24px;
