@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build --base=/vanilla-vite-template/",
     "preview": "vite preview",
+    "build:preview": "vite build && vite preview",
     "predeploy": "npm run build",
     "deploy": "netlify deploy -p"
   },
