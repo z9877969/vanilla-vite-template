@@ -1,0 +1,87 @@
+.container {
+  max-width: 320px;
+  padding: 16px 16px 56px 16px;
+}
+
+.vector-left {
+  width: 40px;
+  height: 40px;
+}
+
+.link-home-wrapper {
+  margin-bottom: 40px;
+}
+
+.link-home {
+  display: flex;
+  align-items: center;
+
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.0012em;
+  @include font(20, 28);
+  color: $_accent_color;
+}
+
+.link-home:hover,
+.link-home:focus {
+  text-decoration: underline;
+}
+
+.privacy-title {
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.0012em;
+  @include font(32, 32);
+  text-align: center;
+
+  margin-bottom: 28px;
+}
+
+.privacy-policy-text {
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.0012em;
+  @include font(16, 24);
+  text-indent: 6px;
+}
+
+.privacy-policy-text-margin {
+  margin-bottom: 36px;
+}
+
+.privacy-policy-span-web {
+  font-weight: 600;
+}
+
+.privacy-policy-title {
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.0012em;
+  @include font(20, 24);
+}
+
+.privacy-list {
+  list-style: disc;
+  padding-left: 20px;
+
+  margin-bottom: 36px;
+}
+
+.privacy-list .privacy-policy-text {
+  text-indent: 0px;
+}
+
+.privacy-policy-span-title {
+  @include font(20, 24);
+}
+
+.privacy-policy-margin {
+  margin-bottom: 36px;
+}
+
+@include media(desktop) {
+  .container {
+    max-width: 1200px;
+  }
+}
