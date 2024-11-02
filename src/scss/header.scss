@@ -18,6 +18,21 @@
   margin: 0 auto;
 }
 
+.nav-wrapper {
+  display: flex;
+}
+
+.nav-list {
+  display: none;
+}
+
+.nav-list-item {
+  font-family: Cherry Bomb;
+  font-weight: 400;
+  @include font(20, 24);
+  color: $_accent_color;
+}
+
 .button-burger-menu {
   width: 40px;
   height: 40px;
@@ -80,4 +95,32 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
+}
+
+@include media(desktop) {
+  .button-burger-menu {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .logo {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 12px;
+    margin-right: 58px;
+  }
+
+  .nav {
+    padding: 10px 75px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+
+    width: 1056px;
+  }
 }

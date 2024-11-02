@@ -41,11 +41,8 @@
 }
 
 body {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // min-height: 100vh;
-
   background-color: $_main_bg_color;
   color: $_main_color;
+
+  margin: 0 auto;
 }
