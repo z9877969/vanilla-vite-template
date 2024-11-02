@@ -1,9 +1,51 @@
 <header class="header">
   <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item"></li>
+    <a href="../index.html" aria-label="Logo">
+      <img
+        class="logo"
+        src="./img/header/logo-mob/logo-1x.jpg"
+        srcset="
+          ./img/header/logo-mob/logo-1x.jpg 1x,
+          ./img/header/logo-mob/logo-2x.jpg 2x
+        "
+        alt="logo"
+        width="40px"
+        height="40px"
+      />
+    </a>
+    <button onclick="openModal()" type="button" class="button-burger-menu">
+      <svg class="icon-burger-menu" width="40px" height="40px">
+        <use href="./img/icons/symbol-defs.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
 
-      <li class="nav-item"></li>
-    </ul>
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <div class="close-button-wrapper">
+          <button type="button" class="close-button" onclick="closeModal()">
+            <svg width="40px" height="40px">
+              <use href="./img/icons/symbol-defs.svg#icon-icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="modal-list">
+          <li class="modal-item">
+            <a class="modal-link" href="../index.html">HOME</a>
+          </li>
+          <li class="modal-item">
+            <a class="modal-link" href="/src/index.html">GALLERY</a>
+          </li>
+          <li class="modal-item">
+            <a class="modal-link" href="/src/index.html">ADVANTAGES</a>
+          </li>
+          <li class="modal-item">
+            <a class="modal-link" href="/src/index.html">REVIEWS</a>
+          </li>
+          <li class="modal-item">
+            <a class="modal-link" href="/src/index.html">ABOUT THE APP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </header>
