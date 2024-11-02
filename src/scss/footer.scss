@@ -1,0 +1,98 @@
+.footer {
+  background-color: #8da93b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 320px;
+  height: 128px;
+  position: relative;
+}
+
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 16px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-title {
+  font-family: 'Cherry Bomb', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.0012em;
+  @include font(12, 16);
+  color: #f9e000;
+  -webkit-text-stroke: #db4200;
+  width: 88px;
+  text-shadow: 2px 2px 0px #db4200, -2px 2px 0px #db4200, 2px -2px 0px #db4200,
+    -2px -2px 0px #db4200;
+}
+
+.burunduk {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #f9e000;
+  border-radius: 8px;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+  // gap: 8px;
+}
+
+.link {
+  color: #112e16;
+  font-weight: 500;
+  @include font(12, 16);
+  text-decoration: underline;
+}
+
+.footer-rights {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 136px;
+  text-align: center;
+  font-weight: 500;
+  @include font(12, 16);
+  color: #112e16;
+}
+
+@include media(desktop) {
+  .footer {
+    width: 1280px;
+    height: 140px;
+    padding: 28px 72px;
+  }
+
+  .footer-rights {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+    @include font(20, 28);
+    width: 400px;
+  }
+
+  .burunduk {
+    width: 72px;
+    height: 72px;
+    border: 2px solid #f9e000;
+  }
+
+  .footer-title {
+    @include font(16, 16);
+    width: 114px;
+  }
+
+  .link {
+    @include font(20, 28);
+  }
+}
