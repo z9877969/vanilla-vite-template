@@ -1,4 +1,8 @@
 .header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -15,7 +19,6 @@
   background-color: #db4200;
   border-radius: 12px;
   min-width: 288px;
-  margin: 0 auto;
 }
 
 .nav-wrapper {
@@ -89,8 +92,10 @@
   line-height: 20px;
   color: $_accent_color;
 
-  text-shadow: 2px 2px 0px #db4200, -2px 2px 0px #db4200, 2px -2px 0px #db4200,
-    -2px -2px 0px #db4200;
+  text-shadow: 0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200,
+    0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200,
+    0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200,
+    0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200, 0 0 4px #db4200;
 
   display: flex;
   flex-direction: column;
@@ -99,6 +104,11 @@
 }
 
 @include media(desktop) {
+  .header {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
   .button-burger-menu {
     display: none;
   }

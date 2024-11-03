@@ -1,4 +1,5 @@
 @import './header.scss';
+@import './hero.scss';
 
 @font-face {
   font-family: 'Josefin Sans';
@@ -43,6 +44,4 @@
 body {
   background-color: $_main_bg_color;
   color: $_main_color;
-
-  margin: 0 auto;
 }

@@ -1,0 +1,73 @@
+.general-background {
+  display: flex;
+  justify-content: center;
+  background-image: url('../img/hero/hero-bg-mob-1x.jpg');
+  min-width: 320px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 16px 44px 16px;
+}
+
+.hero-section-list {
+  display: flex;
+}
+
+.hero-title {
+  font-family: Cherry Bomb;
+  font-weight: 400;
+  @include font(32, 32);
+  margin-right: auto;
+  margin-bottom: 5px;
+  color: $_accent_color;
+
+  text-shadow: 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200;
+}
+
+.hero-title-span {
+  font-family: Cherry Bomb;
+  font-weight: 400;
+  @include font(32, 32);
+  margin-left: auto;
+  margin-bottom: 20px;
+  color: $_accent_color;
+
+  text-shadow: 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200,
+    0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200, 0 0 3px #db4200;
+}
+
+.hero-text {
+  color: $_accent_color;
+}
+
+.hero-section-list {
+  margin-bottom: 20px;
+}
+
+@include media(desktop) {
+  .general-background {
+    background-image: url('../img/hero/hero-bg-desc-1x.jpg');
+    width: 100%;
+  }
+
+  .hero-section {
+    padding: 176px 72px 177px 44px;
+  }
+
+  .hero-section-list {
+    display: none;
+  }
+}
