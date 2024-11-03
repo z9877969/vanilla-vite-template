@@ -3,6 +3,7 @@
   justify-content: center;
   background-image: url('../img/hero/hero-bg-mob-1x.jpg');
   min-width: 320px;
+  padding-top: 8px;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,6 +16,7 @@
   justify-content: center;
   align-items: center;
   padding: 100px 16px 44px 16px;
+  width: 320px;
 }
 
 .hero-section-list {
@@ -59,12 +61,14 @@
 
 @include media(desktop) {
   .general-background {
+    padding-top: 40px;
     background-image: url('../img/hero/hero-bg-desc-1x.jpg');
-    width: 100%;
+    background-size: cover;
   }
 
   .hero-section {
     padding: 176px 72px 177px 44px;
+    width: 1056px;
   }
 
   .hero-section-list {
