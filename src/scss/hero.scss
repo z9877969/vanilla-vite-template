@@ -1,22 +1,20 @@
 .general-background {
   display: flex;
   justify-content: center;
-  background-image: url('../img/hero/hero-bg-mob-1x.jpg');
-  min-width: 100%;
   padding-top: 8px;
+  min-width: 100%;
 
-  background-size: cover;
+  background-image: url('../img/hero/hero-bg-mob-1x.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
 
 .hero-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+
   padding: 100px 16px 44px 16px;
-  width: 320px;
+  max-width: 320px;
 }
 
 .hero-section-list {
@@ -55,22 +53,135 @@
   color: $_accent_color;
 }
 
+.hero-link {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-link-wrapper {
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.0012em;
+  @include font(20, 28);
+
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  border: 3px solid#db4200;
+  color: #db4200;
+  padding: 14px 44px 12px 20px;
+  width: 256px;
+  background-color: #f8ffa1;
+  gap: 12px;
+}
+
+.hero-link-wrapper:hover,
+.hero-link-wrapper:focus {
+  background-color: #db4200;
+  color: #f8ffa1;
+}
+
+.hero-link-span {
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.0012em;
+  @include font(14, 20);
+}
+
+.hero-link-img {
+  width: 40px;
+  height: 46px;
+}
+
 .hero-section-list {
   margin-bottom: 20px;
+}
+
+.hero-section-list-desc {
+  display: none;
+
+  width: 460px;
+  height: 440px;
+}
+
+.hero-img-one {
+  position: absolute;
+}
+
+.hero-img-second {
+  margin-left: 180px;
+}
+
+.road-line {
+  display: none;
+  min-width: 100%;
+
+  position: absolute;
+  border: transparent;
+  top: 720px;
+  bottom: 0;
+  left: 50%; /* Центрування по горизонталі */
+
+  transform: translateX(-50%); /* Центрування лінії точно по центру секції */
+  z-index: 1; /* Задаємо більший z-index, щоб лінія була над секцією */
+  border-style: dashed; /* Стиль пунктирної лінії */
+  border-width: 1px;
 }
 
 @include media(desktop) {
   .general-background {
     padding-top: 40px;
-    background-image: url('../img/hero/hero-bg-desc-1x.jpg');
+    background-image: url('../img/hero/hero-bg-desc-2x.jpg');
+    width: 1280px;
   }
 
   .hero-section {
-    padding: 176px 72px 177px 44px;
-    width: 1056px;
+    padding: 176px 72px 177px 72px;
+    min-width: 1200px;
+
+    display: flex;
   }
 
   .hero-section-list {
     display: none;
+  }
+
+  .hero-title-wrapper {
+    width: 448px;
+  }
+
+  .hero-title {
+    @include font(64, 72);
+    margin-bottom: 0;
+  }
+
+  .hero-title-span {
+    @include font(64, 72);
+    margin-bottom: 36px;
+  }
+
+  .hero-img {
+    width: 288px;
+  }
+
+  .title-link-wrapper {
+    width: 448px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-section-list-desc {
+    display: flex;
+  }
+
+  .hero-wrapper {
+    display: flex;
+    gap: 92px;
+  }
+
+  .road-line {
+    display: block;
   }
 }
