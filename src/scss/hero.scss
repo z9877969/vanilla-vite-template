@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   background-image: url('../img/hero/hero-bg-mob-1x.jpg');
-  min-width: 320px;
+  min-width: 100%;
   padding-top: 8px;
 
   background-size: cover;
@@ -63,7 +63,6 @@
   .general-background {
     padding-top: 40px;
     background-image: url('../img/hero/hero-bg-desc-1x.jpg');
-    background-size: cover;
   }
 
   .hero-section {
