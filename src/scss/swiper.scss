@@ -1,0 +1,123 @@
+.swiper {
+  width: 264px;
+  height: 500px;
+  margin-bottom: 200px;
+  display: flex;
+  position: relative;
+}
+
+.swiper-title {
+  margin-bottom: 28px;
+  font-family: 'Cherry Bomb', sans-serif;
+  font-weight: 400;
+  @include font(28, 28);
+  color: $_accent_color;
+  text-shadow: 2px 2px 0px #db4200, -2px 2px 0px #db4200, 2px -2px 0px #db4200,
+    -2px -2px 0px #db4200;
+  text-align: center;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+  position: relative;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 388px;
+  border-radius: 8px;
+  background: #a9cf39;
+}
+
+.swiper-img {
+  display: block;
+  width: 224px;
+  height: 348px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  width: 38px;
+  height: 30px;
+  position: absolute;
+  top: 100%;
+  transform: translateY(515%);
+  margin: 80px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+@include media(desktop) {
+  .swiper {
+    width: 1200px;
+    height: 956px;
+    margin: 0 auto;
+  }
+
+  .swiper-slide-active .back {
+    transform: translateY(90px);
+    background-color: #f9e000;
+  }
+
+  .swiper-title {
+    margin-bottom: 28px;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+    position: relative;
+  }
+
+  .swiper-slide {
+    transition: transform 0.3s ease;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    // top: 50%;
+    margin: 340px;
+    transform: translateY(115%);
+  }
+
+  .swiper-pagination {
+    display: block;
+    margin-bottom: 350px;
+  }
+
+  .swiper-pagination-bullet {
+    background: #f9e000 !important;
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 3px !important;
+    opacity: 0.7 !important;
+    margin: 0 5px !important;
+    transition: background 0.3s !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    border: 2px solid #db4200;
+    border-radius: 5px;
+  }
+}
