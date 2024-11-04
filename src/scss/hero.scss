@@ -114,18 +114,14 @@
 
 .road-line {
   display: none;
-  min-width: 100%;
 
   position: absolute;
   border: transparent;
   top: 720px;
-  bottom: 0;
-  left: 50%; /* Центрування по горизонталі */
+  left: 50%;
 
   transform: translateX(-50%); /* Центрування лінії точно по центру секції */
   z-index: 1; /* Задаємо більший z-index, щоб лінія була над секцією */
-  border-style: dashed; /* Стиль пунктирної лінії */
-  border-width: 1px;
 }
 
 @include media(desktop) {
