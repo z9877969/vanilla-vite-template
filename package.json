@@ -24,6 +24,7 @@
   "license": "ISC",
   "dependencies": {
     "modern-normalize": "^3.0.1",
+    "page": "^1.11.6",
     "swiper": "^11.1.15",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
