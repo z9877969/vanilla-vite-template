@@ -1,0 +1,14 @@
+.container-about {
+  display: flex;
+}
+
+.wrapper {
+}
+.title {
+  font-family: var(--second-family);
+  font-size: 36px;
+  color: var(--crimson-600);
+}
+
+.text {
+}
