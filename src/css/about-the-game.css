@@ -1,0 +1,20 @@
+.section-about {
+  background: var(--golden-tainoi-400);
+  padding: 56px 0;
+}
+
+.container-about {
+  display: flex;
+  width: 880px;
+  margin: auto;
+}
+
+.about-title {
+  font-family: var(--second-family);
+  font-size: 36px;
+  color: var(--crimson-600);
+}
+
+.about-text {
+  width: 424px;
+}
