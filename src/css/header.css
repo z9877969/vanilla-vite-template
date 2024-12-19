@@ -1,3 +1,29 @@
+.header {
+  padding: 19px 0;
+  width: 1200px;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 1088px;
+}
+
+.nav {
+}
+
+.nav-list {
+  display: flex;
+  gap: 42.75px;
+  padding: 5px 0;
+}
+
 .nav-item {
   font-size: 20px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
 }
