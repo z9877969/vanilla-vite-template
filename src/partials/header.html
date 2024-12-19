@@ -1,16 +1,29 @@
 <header class="header">
   <div class="container container-header">
-    <svg class="logo">
-      <use />
-    </svg>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#home">Home</a></li>
-        <li class="nav-item"><a href="#gallery">Gallery</a></li>
-        <li class="nav-item"><a href="#about">About the game</a></li>
-        <li class="nav-item"><a href="#how-to-play">How to play</a></li>
-        <li class="nav-item"><a href="#game-features">Game Features</a></li>
-      </ul>
-    </nav>
-  </div>
+    <div class="header-wrap">
+      <img
+        class="header-logo"
+        src="/img/logo.png"
+        srcset="/img/logo.png 1x, /img/logo@2x.png 2x"
+        alt="logo-image"
+        width="32"
+        height="32"
+      />
+      <button class="btn-menu" type="button" aria-label="btn menu">
+        <svg class="icon-dots" width="8" height="26">
+          <use href="./img/sprite.svg#dots"></use>
+        </svg>
+      </button>
+      <div class="hidden">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="./index.html">Home</a></li>
+          <li class="nav-item"><a href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a href="#about">About the game</a></li>
+          <li class="nav-item"><a href="#how-to-play">How to play</a></li>
+          <li class="nav-item"><a href="#game-features">Game Features</a></li>
+        </ul>
+      </nav>
+      </div>
+      </div>
 </header>
