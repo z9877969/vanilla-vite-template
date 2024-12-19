@@ -4,7 +4,7 @@
   margin: auto;
 }
 
-.container {
+.container-header {
   display: flex;
   justify-content: space-between;
   width: 1088px;
