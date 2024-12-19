@@ -16,6 +16,10 @@
   --third-family: 'Roboto', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--white-50);
   font-family: var(--font-family);

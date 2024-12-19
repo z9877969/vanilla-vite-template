@@ -1,0 +1,18 @@
+.privaty-title {
+  font-family: var(--second-family);
+  font-size: 36px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--crimson-600);
+}
+
+.privacy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  margin: 56px 0;
+}
+
+.privaty-text {
+  color: #000;
+}
