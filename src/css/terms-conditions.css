@@ -46,11 +46,12 @@
 }
 .link {
   text-decoration: underline;
-  color: LinkText;
+  color: #1c03ae;
 }
 
 @media only screen and (min-width: 1200px) {
   .container-terms {
+    width: 600px;
     padding-top: 80px;
   }
   .back-home-terms {

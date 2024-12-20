@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-vite-template",
+  "name": "kitchen_masters",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-vite-template/",
+    "build": "vite build --base=/kitchen_masters/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview",
     "predeploy": "npm run build",
@@ -20,7 +20,7 @@
     "vite": "^4.5.2",
     "vite-plugin-image-optimizer": "^1.1.8"
   },
-  "author": "Andrii Kyrylenko <z9877969@gmail.com>",
+  "author": "Sovelich",
   "license": "ISC",
   "dependencies": {
     "modern-normalize": "^3.0.1",

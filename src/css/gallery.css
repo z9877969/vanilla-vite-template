@@ -1,54 +1,21 @@
-.section-gallery {
-  padding: 90px 0;
+.container-gallery {
+  padding: 30px;
+  min-width: 100%;
 }
-/* .swiper {
-  width: 288px;
-  height: 278px;
-} */
-.swiper-wrapper {
+.container-gallery > .mySwiper {
+  width: 600px;
+  height: 100%;
+  margin: auto;
+}
+.swiper-wrapper > .swiper-slide {
   display: flex;
-  flex-direction: row;
-  gap: 32px;
-}
-/* .picture {
-  width: 136px;
-  height: 242px;
-} */
-.gallery-img {
-  border: 1px solid #ffefc6;
-  border-radius: 8px;
-  box-shadow: inset 4px 6px 6px 0 rgba(255, 255, 255, 0.6),
-    2px 4px 6px 0 rgba(39, 29, 3, 0.33);
-}
-
-.swiper-btn-wrap {
-  display: flex;
-}
-.swiper-button {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  background: none;
-  /* border: none; */
-  padding: 10px 10px;
+  align-items: center;
+  color: red;
 }
-.icon-swiper {
-  width: 20px;
-  height: 20px;
+.img-slider {
+  text-align: center;
 }
-/* .swiper-button {
-  display: block;
-  border: none;
-  width: 20px;
-  height: 20px;
-} */
-@media only screen and (min-width: 1200px) {
-  .section-gallery {
-    padding-top: 80px;
-    padding-bottom: 56px;
-  }
-  .swiper-button {
-    width: 34px;
-    height: 34px;
-  }
+.img-slider img {
+  max-width: 100%;
 }
