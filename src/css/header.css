@@ -2,6 +2,7 @@
   position: fixed;
   background: var(--white-50);
   width: 100%;
+  z-index: 9;
   /* left: 50%;
   transform: translateX(-50%); */
 }
