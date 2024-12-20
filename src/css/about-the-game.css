@@ -1,0 +1,42 @@
+.section-about {
+  background: var(--golden-tainoi-400);
+  padding: 32px 0;
+}
+.container-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+.about-wrapper {
+}
+.about-title {
+  font-family: var(--second-family);
+  font-size: 20px;
+  color: var(--crimson-600);
+  padding-bottom: 8px;
+}
+.about-text {
+  width: 288px;
+}
+.about-the-game-img {
+  border: 1px solid #ffefc6;
+  border-radius: 8px;
+  box-shadow: inset 4px 6px 6px 0 rgba(255, 255, 255, 0.6),
+    2px 4px 6px 0 rgba(39, 29, 3, 0.33);
+}
+
+@media only screen and (min-width: 1200px) {
+  .section-about {
+    padding: 56px 0;
+  }
+  .container-about {
+    flex-direction: row;
+  }
+  .about-title {
+    font-size: 36px;
+  }
+  .about-text {
+    width: 424px;
+  }
+}

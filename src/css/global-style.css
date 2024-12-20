@@ -1,0 +1,84 @@
+@import 'modern-normalize';
+
+:root {
+  --white-50: #fefefe;
+  --white-950: #292929;
+  --crimson-600: #d72638;
+  --golden-tainoi-100: #ffefc6;
+  --golden-tainoi-400: #ffac20;
+  --golden-tainoi-500: #f98807;
+  --red-berry-900: #8b0000;
+}
+
+:root {
+  --font-family: 'Open Sans', sans-serif;
+  --second-family: 'Bubblegum Sans', sans-serif;
+  --third-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--white-50);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--white-950);
+}
+
+.section {
+}
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .section {
+  }
+  .container {
+    max-width: 1088px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+address {
+  font-style: normal;
+}

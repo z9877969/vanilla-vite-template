@@ -1,0 +1,49 @@
+.section-how-to-play {
+  padding: 32px 0;
+}
+.how-to-play-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+.how-to-play-title {
+  font-family: var(--second-family);
+  font-size: 20px;
+  color: var(--crimson-600);
+  padding-bottom: 8px;
+}
+.how-to-play-list {
+  list-style: decimal;
+  width: 288px;
+  padding-left: 32px;
+}
+.how-to-play-img {
+  border: 1px solid #ffefc6;
+  border-radius: 8px;
+  box-shadow: inset 4px 6px 6px 0 rgba(255, 255, 255, 0.6),
+    2px 4px 6px 0 rgba(39, 29, 3, 0.33);
+}
+
+@media only screen and (min-width: 1200px) {
+  .section-how-to-play {
+    padding-top: 53px;
+    padding-bottom: 53px;
+  }
+  .how-to-play-wrapper {
+    flex-direction: row-reverse;
+    gap: 29px;
+  }
+  /* .how-to-play-img {
+    order: 1;
+  }
+  .how-to-play-wrap-info {
+    order: 2;
+  } */
+  .how-to-play-title {
+    font-size: 36px;
+  }
+  .how-to-play-list {
+    width: 424px;
+  }
+}

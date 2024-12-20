@@ -1,0 +1,21 @@
+.container-gallery {
+  padding: 30px;
+  min-width: 100%;
+}
+.container-gallery > .mySwiper {
+  width: 600px;
+  height: 100%;
+  margin: auto;
+}
+.swiper-wrapper > .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+.img-slider {
+  text-align: center;
+}
+.img-slider img {
+  max-width: 100%;
+}

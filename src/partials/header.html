@@ -1,13 +1,48 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container container-header">
+    <div class="header-wrap">
+      <img
+        class="header-logo"
+        src="/img/logo.png"
+        srcset="/img/logo.png 1x, /img/logo@2x.png 2x"
+        alt="logo-image"
+        width="32"
+        height="32"
+      />
+      <button class="btn-menu" type="button" aria-label="btn menu">
+        <svg class="icon-dots" width="8" height="26">
+          <use href="./img/sprite.svg#dots"></use>
+        </svg>
+      </button>
+      <div class="hidden">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a href="#about">About the game</a></li>
+            <li class="nav-item"><a href="#how-to-play">How to play</a></li>
+            <li class="nav-item"><a href="#game-features">Game Features</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- ====================== MOBILE MENU ==================== -->
+    <!-- <div class="menu-bg">
+      <div class="menu">
+        <button class="menu-close" type="button" aria-label="close menu">
+          <svg class="svg" width="28" height="28">
+            <use href="/img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list">
+          <li class="menu-item"><a href="/">Home</a></li>
+          <li class="menu-item"><a href="#gallery">Gallery</a></li>
+          <li class="menu-item"><a href="#about">About the game</a></li>
+          <li class="menu-item"><a href="#how-to-play">How to play</a></li>
+          <li class="menu-item"><a href="#game-features">Game Features</a></li>
+        </ul>
+      </div>
+    </div> -->
+    <!-- ====================== MOBILE MENU ==================== -->
+  </div>
 </header>
