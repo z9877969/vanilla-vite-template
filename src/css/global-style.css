@@ -30,20 +30,15 @@ body {
 }
 
 .section {
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
 }
 .container {
-  min-width: 320px;
-  max-width: 375px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
 @media only screen and (min-width: 1200px) {
   .section {
-    /* padding-top: 56px;
-    padding-bottom: 56px; */
   }
   .container {
     max-width: 1088px;

@@ -1,18 +1,98 @@
-.privaty-title {
+.privacy-title {
   font-family: var(--second-family);
-  font-size: 36px;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
+  line-height: 140%;
   color: var(--crimson-600);
+  margin-bottom: 24px;
 }
 
 .privacy-list {
   display: flex;
   flex-direction: column;
-  gap: 56px;
-  margin: 56px 0;
+  gap: 32px;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
-.privaty-text {
-  color: #000;
+.privacy-list-item {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 288px;
+}
+
+.privacy-list-item-link {
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  text-indent: 9px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #1c03ae;
+}
+
+.privacy-list-item-item {
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  text-indent: 9px;
+}
+
+.privacy-list-item-item::before {
+  content: '•';
+  font-size: 1.2em;
+  text-indent: 0;
+  text-decoration: none;
+  color: black;
+  margin-right: 3px;
+}
+
+.privacy-text {
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  text-indent: 9px;
+}
+
+.icon-home {
+  width: 32px;
+  height: 32px;
+}
+
+.back-home {
+  display: flex;
+  align-items: center;
+  padding: 32px 0 0 8px;
+}
+
+.privacy-text-home {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .privacy-container {
+    width: 600px;
+  }
+
+  .privacy-text-home {
+    display: block;
+  }
+
+  .privacy-list {
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
+
+  .privacy-list-item {
+    width: 100%;
+  }
+
+  .privacy-title {
+    font-size: 36px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
+  .privacy-text {
+    font-size: 20px;
+  }
+  .privacy-list-item-item {
+    font-size: 20px;
+  }
 }
