@@ -5,37 +5,42 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiper = new Swiper('.swiper', {
-  modules: [Navigation, Keyboard, Mousewheel, Pagination],
-  speed: 1000,
+const swiper = new Swiper('.swiper');
 
-  navigation: {
-    nextEl: '.swiper-button-right',
-    prevEl: '.swiper-button-left',
-  },
+// const swiper = new Swiper('.swiper', {
+//   direction: 'horizontal',
+//   loop: true,
 
-  pagination: {
-    el: '.swiper-pagination',
-  },
+//   modules: [Navigation, Keyboard, Mousewheel, Pagination],
+//   speed: 1000,
 
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-    pageUpDown: true,
-  },
-  mousewheel: {
-    enabled: true,
-    eventsTarget: '.swiper',
-  },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
 
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 15,
-    },
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 36,
-    },
-  },
-});
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+
+//   keyboard: {
+//     enabled: true,
+//     onlyInViewport: true,
+//     pageUpDown: true,
+//   },
+//   mousewheel: {
+//     enabled: true,
+//     eventsTarget: '.swiper',
+//   },
+
+//   breakpoints: {
+//     320: {
+//       slidesPerView: 2,
+//       spaceBetween: 15,
+//     },
+//     1200: {
+//       slidesPerView: 3,
+//       spaceBetween: 36,
+//     },
+//   },
+// });
