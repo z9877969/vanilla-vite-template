@@ -1,2 +1,0 @@
-# Vanilla-vite-template
-
