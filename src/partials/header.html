@@ -1,3 +1,24 @@
 <header class="header">
-<h2>Header</h2>
+  <div class="header__container container">
+    <a href="/" class="header__link">
+      <picture>
+        <source
+          srcset="./img/logo500xp.webp 1x, ./img/logo500xp_2x.webp 2x"
+          type="image/webp"
+        />
+        <img
+          src="./images/vlogo500xp.jpg"
+          alt="logo"
+          class="header__logo"
+          width="56"
+          height="56"
+        />
+      </picture>
+    </a>
+    <div class="header__wrap">
+      <svg class="header__icon" width="44" height="44">
+        <use href="./img/sprite.svg#icon-menu"></use>
+      </svg>
+    </div>
+  </div>
 </header>

@@ -34,21 +34,21 @@ export default defineConfig(({ command }) => {
       ViteWebfontDownload([
         'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400..700&display=swap',
       ]),
-      ViteImageOptimizer({
-        exclude: /^sprite.svg$/,
-        png: {
-          quality: 60,
-        },
-        jpeg: {
-          quality: 60,
-        },
-        jpg: {
-          quality: 60,
-        },
-        webp: {
-          quality: 60,
-        },
-      }),
+      // ViteImageOptimizer({
+      //   exclude: /^sprite.svg$/,
+      //   png: {
+      //     quality: 60,
+      //   },
+      //   jpeg: {
+      //     quality: 60,
+      //   },
+      //   jpg: {
+      //     quality: 60,
+      //   },
+      //   webp: {
+      //     quality: 60,
+      //   },
+      // }),
     ],
     css: {
       preprocessorOptions: {

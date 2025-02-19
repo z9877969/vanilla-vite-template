@@ -1,3 +1,45 @@
 .header {
-  color: chocolate;
+  // color: chocolate;
+  padding-top: 24px;
+  padding-bottom: 40px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+
+    @include media(desktop) {
+      height: 98px;
+    }
+  }
+
+  &__link {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+
+    @include media(desktop) {
+      width: 98px;
+      height: 98px;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__wrap {
+    @include media(desktop) {
+      display: none;
+    }
+  }
+  &__icon {
+    fill: none;
+  }
 }
