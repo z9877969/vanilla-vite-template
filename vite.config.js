@@ -3,6 +3,7 @@ import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import { ViteWebfontDownload } from 'vite-plugin-webfont-dl';
 import { globalStylesOptions } from './global.styles';
 
 export default defineConfig(({ command }) => {
@@ -30,6 +31,9 @@ export default defineConfig(({ command }) => {
     plugins: [
       injectHTML(),
       FullReload(['./src/**/**.html']),
+      ViteWebfontDownload([
+        'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400..700&display=swap',
+      ]),
       ViteImageOptimizer({
         exclude: /^sprite.svg$/,
         png: {

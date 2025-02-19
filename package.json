@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-vite-template",
+  "name": "Super flash speed hero",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-vite-template/",
+    "build": "vite build --base=/st_7964/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview",
     "predeploy": "npm run build",
@@ -18,11 +18,14 @@
     "sharp": "^0.33.4",
     "svgo": "^3.3.2",
     "vite": "^4.5.2",
-    "vite-plugin-image-optimizer": "^1.1.8"
+    "vite-plugin-image-optimizer": "^1.1.8",
+    "vite-plugin-webfont-dl": "^3.9.1"
   },
-  "author": "Andrii Kyrylenko <z9877969@gmail.com>",
+  "author": "Konstantin Lubarskiy (lubarskiy.k@gmail.com) Sergii Bartytskyi (s.bartycjkyj@gmail.com)",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.4.0",
+    "swiper": "^11.2.4",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }

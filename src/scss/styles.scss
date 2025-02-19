@@ -1,14 +1,21 @@
 @import './header.scss';
-@import './vite-promo.scss';
+@import './hero.scss';
+@import './benefits.scss';
+@import './about_game.scss';
+@import './gallery.scss';
+@import './faq.scss';
+@import './reviews.scss';
+@import './uniqueness.scss';
+@import './footer.scss';
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: $_white;
+  background-color: $_dark;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
