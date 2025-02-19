@@ -1,3 +1,64 @@
 .footer {
-  color: red;
+  border-radius: 20px 20px 0px 0px;
+  background: $_footer;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  @include media(desktop) {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}
+.footer_first {
+  margin-bottom: 24px;
+  @include media(desktop) {
+    display: flex;
+    gap: 98px;
+    margin-bottom: 29px;
+  }
+}
+.footer_logo_link {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
+}
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: start;
+    flex-grow: 1;
+    gap: 140px;
+    font-size: 24px;
+  }
+}
+
+.footer_logo_image {
+  border-radius: 20px;
+}
+
+.footer_link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
+  transition: color $_transition;
+  &:hover {
+    color: $_blue_hover;
+  }
+}
+.footer_second {
+  color: var(--blue_hover, #375af5);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  @include font(14, 17);
+  @include media(desktop) {
+    @include font(24, 29);
+  }
 }
