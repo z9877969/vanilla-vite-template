@@ -7,7 +7,7 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/vanilla-vite-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-vite-template/assets/index-95868f65.css">
+    <link rel="stylesheet" href="/vanilla-vite-template/assets/index-452b352a.css">
   </head>
   <body>
     <header class="header">
@@ -21,9 +21,18 @@
         <a href="./page-3.html" class="nav-link">Page 3</a>
       </li>
     </ul>
+    <button type="button" class="burger-btn" data-action="open">Open menu</button>
+    <div class="burger-menu" data-visible="close">
+      <ul>
+        <li><a href="#">link-1</a></li>
+        <li><a href="#">link-2</a></li>
+        <li><a href="#">link-3</a></li>
+        <li><a href="#">link-4</a></li>
+      </ul>
+      <button type="button" class="btn-close" data-action="close">close</button>
+    </div>
   </nav>
 </header>
-
 
     <section>
       <h1>Example page title</h1>
